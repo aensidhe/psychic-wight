@@ -2,7 +2,6 @@ psychic-wight
 =============
 
 WoT mod pack from AenSidhe.
-
 1. XPM.
 2. Scope with timer.
 3. Infopanel.
