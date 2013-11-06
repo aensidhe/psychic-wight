@@ -9,10 +9,10 @@
     "startPage": 1,
     // true - Display net income of credits in first page
     // true - Отображать чистый доход на первой странице
-    "showNetIncome": false,
+    "showNetIncome": true,
     // true - Display shots precision and damage in first page under credits and XP
     // true - Отображать процент попаданий и урон на первой странице, под кредитами и опытом
-    "showExtendedInfo": false,
+    "showExtendedInfo": true,
     // true - Enable display of "chance to win"
     // true - включить отображение шансов на победу
     "showChances": false,
