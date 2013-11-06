@@ -1,4 +1,4 @@
-﻿Content:
+Content:
   1. Common information
   2. Install
   3. Update
@@ -15,8 +15,8 @@
     * Players Panel Controlling (width, transparency, content)
     * Clock at battle loading screen
     * Player, clan icon
-    * Different vehicle icon sets for ears, battle loading screen, etc.
-    * Players statistics (only with xvm-stat package)
+    * Different vehicle icon sets as for the team, well as for ears, battle loading screen, etc.
+    * Players statistics
     * Capture bar additional information
     * Customizable minimap
     * Display extended statistics in the company and user info windows
@@ -51,11 +51,11 @@
       \res_mods\xvm\configs\@Default\
     Or use online editor: http://www.koreanrandom.com/forum/topic/1422-/#entry11316
 
-    Note: If you changing config manually, use Notepad, DO NOT use MS Word,
+    Note: If you want to change the config manually, use Notepad, DO NOT use MS Word,
     WordPad and such editors.
 
   3. If XVM incorrectly detects the language of the game client,
-    then in the configuration file (by default\res_mods\xvm\configs\@default\@xvm.xc)
+    then in the configuration file (by default \res_mods\xvm\configs\@default\@xvm.xc)
     change the value of the variable "language" from "auto" to the language code.
     The language code must match the name of the file in the \res_mods\xvm\l10n\ (for example, "en").
 
@@ -97,7 +97,7 @@
       {{vehicle}}     - vehicle name
       {{vehiclename}} - internal vehicle name (usa-M24_Chaffee)
       {{vtype}}       - vehicle type
-      {{c:vtype}}     - color depended from vehicle type
+      {{c:vtype}}     - color depending on vehicle type
       + statistics macros (see below)
 
     In tank markers:
@@ -121,14 +121,14 @@
       {{dmg}}         - damage health points
       {{dmg-ratio}}   - damage health ratio (without '%' sign)
       {{dmg-kind}}    - damage kind (attack, fire, ramming, ...)
-      {{c:hp}}        - color depended from current health points (only in vehicle markers)
-      {{c:hp-ratio}}  - color depended from current health ratio (only in vehicle markers)
-      {{c:dmg}}       - color depended from damage source
-      {{c:dmg-kind}}  - color depended from damage kind
-      {{c:vtype}}     - color depended from vehicle type
+      {{c:hp}}        - color depending on current health points (only in vehicle markers)
+      {{c:hp-ratio}}  - color depending on current health ratio (only in vehicle markers)
+      {{c:dmg}}       - color depending on damage source
+      {{c:dmg-kind}}  - color depending on damage kind
+      {{c:vtype}}     - color depending on vehicle type
       {{c:system}}    - system color (disable override color)
-      {{a:hp}}        - transparency depended from current health points (only in vehicle markers)
-      {{a:hp-ratio}}  - transparency depended from current health ratio (only in vehicle markers)
+      {{a:hp}}        - transparency depending on current health points (only in vehicle markers)
+      {{a:hp-ratio}}  - transparency depending on current health ratio (only in vehicle markers)
       {{l10n:blownUp}}  - localizated text "Blown-up!", only in "blowupMessage"
       + statistics macros (see below)
 
@@ -150,8 +150,8 @@
       {{level}}       - vehicle level (Arabic numerals)
       {{rlevel}}      - vehicle level (Roman numerals)
       {{dmg-kind}}    - damage kind (attack, fire, ramming, ...)
-      {{c:dmg-kind}}  - color depended from damage kind
-      {{c:vtype}}     - color depended from vehicle type
+      {{c:dmg-kind}}  - color depending on damage kind
+      {{c:vtype}}     - color depending on vehicle type
       {{l10n:Hits}}   - localizated text "Hits"
       {{l10n:Total}}  - localizated text "Total"
       {{l10n:Last}}   - localizated text "Last"
@@ -169,13 +169,13 @@
       {{hp}}          - current health points
       {{hp-ratio}}    - current health ratio (without '%' sign)
       {{hp-max}}      - maximum health points
-      {{c:vtype}}     - color depended from vehicle type
-      {{c:hp}}        - color depended from current health points
-      {{c:hp-ratio}}  - color depended from current health ratio
+      {{c:vtype}}     - color depending on vehicle type
+      {{c:hp}}        - color depending on current health points
+      {{c:hp-ratio}}  - color depending on current health ratio
       {{l10n:hpLeftTitle}}  - localizated text "Hitpoints left:", only in "header"
 
     In Capture bar:
-      {{points}}      - points already capture
+      {{points}}      - points already captured
       {{extra}}       - extra text section; is shows only when timeleft and number of capturers was calculated successfully
       {{tanks}}       - number of capturers; cant define if more than 3; can be placed only inside extra section
       {{time}}        - time left to full capture; minutes and seconds;  can be placed only inside extra section
@@ -189,17 +189,25 @@
       {{l10n:Capturers}}            - localizated text "Capturers"
 
     In Minimap:
-      {{level}}        - subject level
-      {{short-nick}}   - subject shortened nickname
-      {{vehicle}}      - subject full vehicle type
+      {{level}}         - subject level
+      {{short-nick}}    - subject shortened nickname
+      {{vehicle}}       - subject full vehicle type
       {{vehicle-type}}  - subject full vehicle type
       {{vehicle-class}} - places special symbol depending on subject vehicle class
-      {{cellsize}}     - minimap cell side size
-      {{vehicle-name}} - returns vehicle system name - usa-M24_Chaffee
-      {{vehiclename}}  - returns vehicle system name - usa-M24_Chaffee
-      {{vehicle-short}}  - shortened vehicle name
+      {{cellsize}}      - minimap cell side size
+      {{vehicle-name}}  - returns vehicle system name - usa-M24_Chaffee
+      {{vehiclename}}   - returns vehicle system name - usa-M24_Chaffee
+      {{vehicle-short}} - shortened vehicle name
 
-    Statistics macros ('rating/showPlayersStatistics' must be anabled):
+    In Squad:
+      {{level}}          - vehicle level (Arabic numerals)
+      {{rlevel}}         - vehicle level (Roman numerals)
+      {{vtype}}          - vehicle class (text substitution from config)
+      {{vtype-l}}        - vehicle class (text substitution from locale)
+      {{battletier-min}} - minimal vehicle battle tier
+      {{battletier-max}} - maximal vehicle battle tier
+
+    Statistics macros ('rating/showPlayersStatistics' must be enabled):
       {{avglvl}}      - average level (tier) of tanks
       {{eff}}         - player efficiency: http://wot-news.com/index.php/stat/calc/en/
       {{eff:4}}       - player efficiency aligned from left to 4 chars
@@ -211,7 +219,7 @@
       {{rating:3}}    - GWR aligned from left to 3 chars
       {{battles}}     - total battles count
       {{wins}}        - total wins count
-      {{kb}}          - number of kilo-battles (total battles count divided by 1000).
+      {{kb}}          - number of kilo-battles (total battles count divided by 1000)
       {{kb:3}}        - number of kilo-battles aligned from left to 3 chars
       {{t-rating}}    - vehicle win ratio
       {{t-rating:3}}  - vehicle win ratio aligned from left to 3 chars
@@ -228,21 +236,21 @@
       {{tfb}} - average frags per battle for current tank
       {{tsb}} - average number of spotted enemies per battle for current tank
       {{c:tdb}}, {{c:tdv}}, {{c:tfb}}, {{c:tsb}} - dynamic colors for this macros
-      {{c:eff}}       - color depended from player efficiency
-      {{c:e}}         - color depended from player per-vehicle efficiency
-      {{c:wn}}        - color depended from WN6 rating
-      {{c:xeff}}      - color depended from XVM Scale for efficiency
-      {{c:xwn}}       - color depended from XVM Scale for WN6
-      {{c:rating}}    - color depended from GWR
-      {{c:kb}}        - color depended from kilo-battles
-      {{c:avglvl}}    - color depended from average level of tanks
-      {{c:t-rating}}  - color depended from current vehicle win ratio
-      {{c:t-battles}} - color depended from current vehicle battles
-      Any color macro you can change to transparency macro ({{a: tdb}}).
+      {{c:eff}}       - color depending on player efficiency
+      {{c:e}}         - color depending on player per-vehicle efficiency
+      {{c:wn}}        - color depending on WN6 rating
+      {{c:xeff}}      - color depending on XVM Scale for efficiency
+      {{c:xwn}}       - color depending on XVM Scale for WN6
+      {{c:rating}}    - color depending on GWR
+      {{c:kb}}        - color depending on kilo-battles
+      {{c:avglvl}}    - color depending on average level of tanks
+      {{c:t-rating}}  - color depending on current vehicle win ratio
+      {{c:t-battles}} - color depending on current vehicle battles
+      Any color macro you can change to transparency macro (e.g. {{a:tdb}}).
 
     Localization macros usage - {{l10n:localizationKey}}
       Macros are just links to translations in file res_mods/xvm/l10n/XX.xc file (XX means language code).
-      If translate is not found, "localizationKey" is displayed.
+      If the translation is not found, "localizationKey" is displayed.
 
       Capture bar example
         /l10n/en.xc
@@ -265,8 +273,8 @@
       "<font color='{{c:xwn}}'>{{rating}}</font>"
 
   Dynamic color and transparency usage examples:
-    "color": "{{c:xwn}}" - color depended from xwn
-    "alpha": "{{a:hp}}" - transparency depended from current health
+    "color": "{{c:xwn}}" - color depending on xwn
+    "alpha": "{{a:hp}}" - transparency depending on current health
 
   Clan and players icons.
   Config parameter battle/clanIconsFolder set path to clan icons root folder.
@@ -285,19 +293,18 @@
   Full archive with all clans can be downloaded separately:
     http://code.google.com/p/wot-xvm/downloads/list
     Files: clanicons-full-ru-XXX.zip (RU), clanicons-full-eu-XXX.zip (EU), clanicons-full-na-XXX.zip (NA),
-    clanicons-full-sea-XXX.zip (SEA), clanicons-full-kr-XXX.zip (KR), clanicons-full-vn-XXX.zip (VN)
+    clanicons-full-sg-XXX.zip (SG), clanicons-full-kr-XXX.zip (KR), clanicons-full-vn-XXX.zip (VN)
 
-  6-th sence image.
+  6-th sense image.
   To change sixth sense indicator place alternative PNG image to
    \res_mods\xvm\res\SixthSense.png.
 
   Hit Log.
   Negative x, y values allow to bind the text to the right and bottom edges for
   the same behavior with different screen resolutions.
-  Will work only with running xvm-stat!
 
   Clock in battle and in battle loading screen.
-  Formát: PHP Date: http://php.net/date
+  Format: PHP Date: http://php.net/date
   For example:
       "clockFormat": "H:i"          => 01:23
       "clockFormat": "Y.m.d H:i:s"  => 2013.05.20 01:23:45

@@ -1,51 +1,64 @@
 ﻿XVM-dev:
   [NEW FUNCTIONS]
-  * localization: added Bulgarian language
-  [FIXES]
-  * pinger: add wine support. For activation execute ln -s `which ping` ~/.wine/drive_c/ping.exe
-  
-XVM-5.0.0-test3:
+  * localization: added Japanese language
+
+XVM-5.0.1-test2:
+
+XVM-5.0.1-test1:
+  * adaptation to WoT 0.8.9
+
   [NEW FUNCTIONS]
-  * new options:
-      login/skipIntro - Skip intro movie
-      login/autologin - Auto enter to the game
-      userInfo/startPage - Initial page userinfo window (default: 4)
-      battleResults/showNetIncome - Display net income of credits in After Battle Screen
-      battleResults/showExtendedInfo - Display shots precision and damage in After Battle Screen
-  * localization: added Romanian language
+  * localization: added Brazilian Portuguese language
+  [MACROS]
+  * squad: added macros {{vtype-l}}
 
-  [FIXES]
-  * minimap: fixed enemy teamkiller color
-  * markers: fixed drowned vehicle type icon color
-
-  [OTHER]
-  * config: "finalStatistic" section renamed to "battleResults"
-  * battleResults: removed "sortColumn" option, build in since 0.8.8
-
-XVM-5.0.0-test2:
+XVM-5.0.0-test5:
   * adaptation to WoT 0.8.8
 
   [NEW FUNCTIONS]
   * possibility of editing nickname field in battleloading, Tab:
     formatLeftNick, formatRightNick
-  * localization: added Danish, Italian and Turkish languages
-  * localization: added Polish readme
+  * new options:
+    login/skipIntro - Skip intro movie
+    login/autologin - Auto enter to the game
+    userInfo/startPage - Initial page userinfo window (default: 4)
+    battleResults/showNetIncome - Display net income of credits in After Battle Screen
+    battleResults/showExtendedInfo - Display shots precision and damage in After Battle Screen
+    userInfo/defaultFilterValue - default value for the filter text input
+  * possibility of editing format of vehicle info field in squad window:
+      squad/formatInfoField
+  * ability to configure different sets of icons to the left and right panels, markers of allies and enemies:
+      iconset/battleLoadingAlly, iconset/battleLoadingEnemy - for battle loading
+      iconset/playersPanelAlly, iconset/playersPanelEnemy   - for players panel
+      iconset/statisticFormAlly, iconset/statisticFormEnemy - for Tab window
+      iconset/vehicleMarkerAlly, iconset/vehicleMarkerEnemy - for vehicle markers
+  * pinger: add wine support. For activation execute
+    ln -s `which ping` ~/.wine/drive_c/ping.exe
+  * localization: added Romanian, Bulgarian, Danish, Italian, Norwegian, Serbian, Slovak and Turkish languages
+  * localization: added Polish, French readme
 
   [MACROS]
   * added macros {{c:avglvl}}, {{a:avglvl}}
+  * squad: added macros {{level}}, {{rlevel}}, {{vtype}}, {{battletier-min}}, {{battletier-max}}
 
   [FIXES]
   * fixed "sixth sense" icon wrong positioning
+  * minimap: fixed enemy teamkiller color
+  * markers: fixed drowned vehicle type icon color
 
   [OTHER]
   * new platform - AS3+Python
   * xvm-stat, Dokan and .NET Framework is not required now. Please, delete xvm-stat.exe.
+  * removed TWR rating
   * config version increased to 5.0.0
   * statistic is disabled in the config by default
-  * removed TWR rating
-  * removed option login/showPingOnGameLoading
-  * renamed fields formatLeft/Right in battleloading, Tab
   * changed clock format in battleloading (http://php.net/date)
+  * config: "finalStatistic" section renamed to "battleResults"
+  * removed battleResults/sortColumn option, build in since 0.8.8
+  * removed option login/showPingOnGameLoading, userInfo/showEColumn, squad/romanNumbers,
+    squad/leftLvlBorder, squad/rightLvlBorder
+  * renamed fields in iconset: iconset/battleLoading, iconset/playersPanel, iconset/statisticForm, iconset/vehicleMarker
+  * renamed fields "formatLeft", "formatRight" in battleloading, Tab
 
 XVM-4.1.1:
   [NEW FUNCTIONS]
