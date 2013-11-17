@@ -1,0 +1,816 @@
+
+
+								FAQ и ГАйД
+  
+  
+  							Часто задаваемые вопросы.
+
+							
+Куда это устанавливать. Я что то не могу разобратся?
+World_of_Tanks\res_mods\Текуший патч\scripts\client\gui\Scaleform\RadialMenu.рус
+World_of_Tanks\res_mods\Текуший патч\scripts\client\gui\Scaleform\RadialMenu.xml
+Обезательно должны быть эти 2 файла.
+
+Для чего нужен файл RadialMenu.рус?
+Это файл отвечающий за работу самого мода.
+
+Как настроить Горячие кнопки на F3-F12? Можно ли реализовать, чтобы показывало оставшееся время перезарядки по нажатию F8?
+Зайдите в "настройках" игры - > "управление" и уберите/измените F3-F12 с команд. Дальше в конфиге у вас должны быть прописаны команды на F3-F12 и всё.
+
+Как убрать повторную строку "Перезарезаюсь!" (Что надо изменить в конфиге  что бы по два раза не вылазило перезаряжаюсь?).
+Удалить или деактивировать строку <Command>RELOADINGGUN</Command> в вашей команде. Деактивируется вот так <!-- <Command>RELOADINGGUN</Command> -->
+
+Как устновить комбинацию клавишь на команду.
+Добавить в вашу команду строку <Hotkey>KEY_LALT+KEY_T</Hotkey> . В внутри которой вы прописывете нужную вам комбинацию клавишь клавиатуры, джойстика или мыши.
+
+Почему у меня нехочет работать мод, пишет NO CONFIG?
+1. Устанвлены другие моды которые блокируют данный мод. В частности - это из-за Огромных мод паков.
+2. Ваш Конфиг файл неверной кодировки. Должне быть в кодировке Unicode UTF-8 без BOM.
+3.Самая разпространённая. Это допущена ошибка в самом Конфиге:
+3.1. Нехватает или лишняя скобочка < />
+3.2. Нарушена струкрура конфига. Неверное написание команд.
+3.3. Неверно написали коментарий. Делатеся скобками <!-- текст -->
+
+ЛЮДИ! только об этом как включать эти команды в бою?!
+Клавишей "Z", для команд с картами Альт+Z если таковы прописаны в конфиге.
+
+Может кто сталкивался? Конфиг создал, настроил и он правильно работал. Вот только что "испортился" - пишет все сообщения в общий чат.
+У вас в команде прописана строка <ChatMode>All</ChatMode> Это означате что вы будете писать всем. Измените её так <ChatMode>Team</ChatMode>, что бы писать только команде.
+
+Почему не работает горячая клавиша? Например при нажатии на "С" выдаёт время перезарядки у барабанщика.
+1. Возможно вы неверно Использовали Русскую "С" вместо латинской.
+2. Возможно вы неверно прописали комбинацию <Hotkey>C</Hotkey>, а надо <Hotkey>KEY_C</Hotkey> или <Hotkey>KEY_LALT+KEY_C</Hotkey>...
+
+я так понимаю, сырой мод, не я лучче стандартными, а то запаришся, перезагружать игру, удалять моды.
+1. Мод не сырой. Просто каждый настраивает его под себя.
+2. Перезапускать игру необезательно. Надо просто нажать комбинацию клавишь  <MenuReloadHotkey>KEY_LCONTROL+KEY_F11</MenuReloadHotkey> - это Левый Конрол + Ф11. Данная настройка прописана в начале конфига для быстрой перезагрузки конфига, если произошла ошибка или надо его перезагрузить после изменения невыключая игру.
+  
+  
+  
+  0. ЧТО ЭТО?
+
+	Это мод, позволяющий настраивать стандартную Розу Команд.
+	Созденные вами команды или сообщения будут видны другим игрокам!
+
+  Возможности данного мода:
+  * Редактирование команд в меню.
+     - Поддерживаются макросы.
+     - Можно указать в общий или групповой чат команду, текст, фразу, Анекдот, Вербовку...
+  * Возможность настроить разделы меню для каждого типа техники по отдельности.
+  * Подвешивание команд на комбинации горячих клавиш для вызова в обход меню.
+  * Автоматическое "прокликивание" указанных квадратов мини-карты.
+  * Совмещение встроенных команд (Назад, Перезаряжаюсь) и своего сообщения.
+  * Отдельный раздел меню с командами, привязанными к текущей карте.
+  * Можно настроить команды для каждого танка в отдельности.
+
+  ВНИМАНИЕ!!!
+  Данный мод не относиться к F2-F8 командам.
+
+  Багрепорты и пожелания отправляйте через ПМ на форуме или в игре (tehHedger).         
+
+  Новые версии появляются тут: 
+    http://rghost.ru/users/Hedger/releases/CustomCommandRose
+  Отдельное спасибо mooseyaka за помощь в разработке и тестировании.  
+
+
+						1. О ФАЙЛЕ С НАСТРОЙКАМИ
+        
+  Файл с конфигурацией называется RadialMenu.xml и лежит по пути
+    res_mods\<версия игры>\scripts\client\gui\Scaleform\
+ 
+    <HotkeyOnlyCommands> - дополнительные команды, вызываемые по горячим клавишам.
+		...
+	</HotkeyOnlyCommands>
+        
+
+В разделах <TankMenu>, <SPGMenu>, <AT-SPGMenu>, <heavyTankMenu>, ... и относящихся к видам техники предусмотрены следующие секции:
+
+    <CommonCommands> - общие команды, когда прицел ни на кого не наведён;
+		... 6 команд.
+	</CommonCommands>
+	
+    <TeamCommands>   - команды когда прицел на союзном танке;
+		... 6 команд.
+	</TeamCommands>
+	
+    <EnemyCommands>  - команды когда прицел на противнике.
+		... 6 команд.
+	</EnemyCommands>
+	
+В каждой секции только по 6 команд. Если сделали только три команды в одной секции то будут отображаться только три команды, а остальные три будут показаны как "NO CONFIG"
+ 
+Первые шесть команд из каждой секции попадают в радиальное меню. Остальные, 
+если они есть, можно вызывать по назначенным им горячим клавишам.         
+
+ 
+
+  В блоке <MapMenuKey> указан код кнопки, нажатие которой при вызове меню 
+приведёт к отображению команд, привязанных к текущей карте.
+
+
+
+							2. ПРИОРИТЕТ НАСТРОЕК
+
+  Базовая загрузка команд производится из разделов CommonCommands, TeamCommands, EnemyCommands.  
+
+  Наивысший приоритет при построении меню имеют настройки указанных выше блоков 
+из раздела  <TankSpecificCommands>, если они определены для текущего танка.
+
+  Если особых настроек там не найдено, то происходит загрузка раздела, 
+соответствующего классу техники (SPGMenu, AT-SPGMenu, heavyTankMenu, ...) 
+
+  Если же и там не найдена уточняющая конфигурация, то загружаются основные 
+настройки из раздела <TankMenu>.   
+
+
+						2. НАСТРОЙКА ПОД ОТДЕЛЬНЫЕ ТАНКИ
+
+  В разделе <TankSpecificCommands> можно либо настроить секции, которые будут 
+загружаться при игре на этом танке, либо указать другой блок из данного раздела, 
+из которого следует брать команды. 
+
+    Пример:
+	На отдельный танк:
+<TankSpecificCommands>
+	<Lowe>
+		<CommonCommands>
+			<Command>
+			<Title>Позиция.</Title>
+			<Icon>Stop</Icon>
+			<Text>Меняю позицию.</Text>
+			<ChatMode>Team</ChatMode>
+			</Command>
+			
+			Далее ещё 5 команд можно добавить если нужны.
+		</CommonCommands>
+		
+		<TeamCommands>
+		Прописать 6 команд, если нужны.
+		</TeamCommands>
+		
+		<EnemyCommands>
+			Прописать 6 команд, если нужны.
+		</EnemyCommands>
+	</Lowe>
+</TankSpecificCommands>
+
+
+	Пример:
+	На танки для которых будет одна настройка. В данной настройке используеются команды с Льва для М4, если добавит ещё танки ( <Alias>Имя танка</Alias> ) то и им будет взята настройка с Льва.:
+	
+<TankSpecificCommands>
+	<AMX_M4_1945>
+		<Alias>Lowe</Alias>
+	</AMX_M4_1945>
+
+	<Lowe>
+		<CommonCommands>
+			<Command>
+				<Title>заряжаюсь!</Title>
+				<Icon>Reload</Icon>
+				<Command>RELOADINGGUN</Command>
+				<Text>%(ownVehicle)s КД %(reload)s секунд.</Text>
+				<ChatMode>Team</ChatMode>
+				<Hotkey>KEY_LCTRL+KEY_R</Hotkey>
+			</Command>
+			
+			Далее ещё 5 команд можно добавить если нужны.
+		</CommonCommands>
+		
+		<TeamCommands>
+			Прописать 6 команд, если нужны.
+		</TeamCommands>
+		
+		<EnemyCommands>
+			Прописать 6 команд, если нужны.
+		</EnemyCommands>
+	</Lowe>
+</TankSpecificCommands>
+
+	Пример:
+	Также, можно объединять конфигурацию для несколько танков в одну группу, и 
+сослаться на неё в настройках каждого из них.
+
+    Пример:
+<TankSpecificCommands>
+    <AMX_50_100>
+      <Alias>AutoloaderTank</Alias>
+    </AMX_50_100>   
+
+    <AMX_13_90>
+      <Alias>AutoloaderTank</Alias>
+    </AMX_13_90> 
+
+    <AutoloaderTank>
+      <CommonCommands>
+			<Command>
+				<Title>заряжаюсь!</Title>
+				<Icon>Reload</Icon>
+				<Command>RELOADINGGUN</Command>
+				<Text>%(ownVehicle)s Ухожу в КД %(reload)s секунд.</Text>
+				<ChatMode>Team</ChatMode>
+				<Hotkey>KEY_LCTRL+KEY_R</Hotkey>
+			</Command>
+			
+			Далее ещё 5 команд можно добавить если нужны.
+		</CommonCommands>
+		
+		<TeamCommands>
+		Прописать 6 команд, если нужны.
+		</TeamCommands>
+		
+		<EnemyCommands>
+		Прописать 6 команд, если нужны.
+		</EnemyCommands>
+    </AutoloaderTank> 
+ </TankSpecificCommands>   
+
+  Список названий танков - http://pastebin.com/eMWtuLuG   или смотрите ниже.
+  ВНИМАНИЕ! Названия танков чувствительны к регистру.
+
+  
+						3. НАСТРОЙКА ПОД РАЗЛИЧНЫЕ КАРТЫ
+ 
+Команды, привязанные к карте, размещаются в разделе MapCommands. Они 
+автоматически загружаются при попадании на конкретную карту. Этот режим меню 
+вызывается нажатием кнопки меню карты (по дефолту левый альт) + кнопки показа 
+радиального меню (по дефолту z).
+
+В этом разделе размещаются секции с именем, соответствующим игровым названиям 
+карт. Имя карты пишется с префиксом "Map_", т.е. под Малиновку (02_malinovka) 
+имя секции "Map_02_malinovka".
+
+ВНИМАНИЕ! Горячие клавиши для команд в данной секции не обрабатываются. 
+
+<MapCommands> - Общая настройка для карты Карелия;
+	<01_karelia>
+		<CommonCommands>
+			... 6 команд.
+		</CommonCommands>
+		
+		<TeamCommands>
+			... 6 команд.
+		</TeamCommands>
+		
+		<EnemyCommands>
+			... 6 команд.
+		</EnemyCommands>
+	</01_karelia>
+</MapCommands>
+
+<MapCommands> - Настройка для данного танка на карте Карелия.
+	<01_karelia>
+		<Lowe>
+			<CommonCommands>
+				... 6 команд.
+			</CommonCommands>
+		
+			<TeamCommands>
+				... 6 команд.
+			</TeamCommands>
+		
+			<EnemyCommands>
+				... 6 команд.
+			</EnemyCommands>
+		</Lowe>
+	</01_karelia>
+</MapCommands>
+
+
+Также есть секция Map_Default, которая грузится при отсутствии конфига под 
+данную карту.  Её можно рассматривать как дополнение общего раздела меню. 
+
+
+
+							4. ФОРМАТ КОМАНД
+
+	Каждая команда определяется следующим образом:
+ 
+	
+		// Название вашей команды (отображается в Роз Меню при нажатии "Z")
+      <Title>КД</Title>
+      
+	  
+		// Иконка в Роз Меню. Отображается иконочка при нажатии "Z".
+      <Icon>Reload</Icon>
+	  Допустимые имена иконок:
+		Attack
+		Yes
+		Helpme
+		Backtobase
+		No
+		Reload
+		Followme
+		Turnback
+		Helpmeex
+		Stop
+		Support
+		AttackSPG
+
+		
+		// Текст который будет набран в чат автоматически при использовании в команде (поддерживаются макросы).
+      <Text>Ухожу на КД %(ownPos)s, осталось %(reload)s сек.</Text> 
+	  Макросы:
+		%(name)s			- имя игрока, на чей танк наведён прицел.
+		%(vehicle)s			- название типа техники.
+		%(clan)s			- название клана.
+		%(viewPos)s			- квадрат, в который направлена камера.
+		%(ownPos)s			- квадрат, в котором находится свой танк.
+		%(randpart)s		- случайная строка из списка в тэге <Variants/>.
+		%(reload)s			- оставшееся время перезарядки орудия, в секундах.
+		%(ammo)s			- число неистраченных снарядов в барабане.
+		%(ownVehicle)s		- свой танк.
+
+	Макросы статистики:
+		%(winrate)s%%		- общий процент побед.
+		%(eff)s				- РЭ по wot-news.
+		%(kbattles)s		- число боёв, в тысячах.
+		%(avglvl)s			- средний уровень танков.
+		%(twr)s				- TWR.
+		%(tankDamage)s		- средний дамаг на танке, обычно отдаётся XVM'ом. некорректно.
+		%(tankWinrate)s%%	- процент побед по танку.
+ 
+	Макросы которые при отсутствии цели соответствуют игроку:
+		%(vehicle)s			- название типа техники.
+		%(clan)s			- название клана.
+		%(name)s			- имя игрока, на чей танк наведён прицел
+		%(winrate)s%%		- общий процент побед.
+		%(eff)s				- РЭ по wot-news.
+		%(kbattles)s		- число боёв, в тысячах.
+		%(avglvl)s			- средний уровень танков.
+		%(twr)s				- TWR.
+		%(tankDamage)s		- средний дамаг на танке, обычно отдаётся XVM'ом. некорректно.
+		%(tankWinrate)s%%	- процент побед по танку.
+		
+		
+		//Задаётся настройка прописывания текста в обычный "Team", или в общий канал "All".
+      <ChatMode>Team</ChatMode>
+	  или
+	  <ChatMode>All</ChatMode>
+
+	  
+		//Базовые команды для танка. Команда отображает анимацию на миникарте и прописывает в чат ваше действие.
+	 	<Command>RELOADINGGUN</Command>
+		
+		В данном случае на миникарте замигает дейсвие Презарежаюсь! и В чате пропишется "Перезарежаюсь!".
+		Допустимые имена команд:
+			ATTACK
+			ATTACKENEMY
+			BACKTOBASE
+			FOLLOWME
+			HELPME
+			HELPMEEX
+			NEGATIVE
+			POSITIVE
+			RELOADINGGUN
+			STOP
+			SUPPORTMEWITHFIRE
+			TURNBACK
+     
+	 
+		//Вариации команд (поддерживаются макросы)
+      <Variants>
+        <Variant>Список</Variant>
+        <Variant>из нескольких строк,</Variant>
+        <Variant>одна из которых подставляется в макрос %(randpart)s</Variant>
+        <Variant>Строка выбирается случайно</Variant>
+      </Variants>
+
+
+		//Выключение рандомного выбора фраз из блока <Variants>
+      //При такой записи в команде варианты идут последовательно
+      <NoRandomChoice>1</NoRandomChoice>
+        
+
+		//Список квадратов для "прокликивания". Равносильно нажатию на миникарте квадраты B7 D9.
+      <Ping>B7 D9</Ping>
+	  Можно использовать команду с макросами <Ping>%(viewPos)s</Ping>
+
+	  
+		//Сочетание клавиш для отдачи команды без вызова радиального меню. При нажатии "R" сработает ваша команда.
+      <Hotkey>KEY_LALT+KEY_R</Hotkey>
+     
+
+		//Задержка до следующей отправки команды, в целых секундах.
+      <Cooldown>4</Cooldown>
+
+
+
+
+
+
+
+
+
+						НАЗВАНИЯ ТАНКОВ
+						
+//=================Китайские танки:=================//
+
+Ch01_Type59
+Ch01_Type59_Gold
+Ch02_Type62
+Ch03_WZ-111
+ch04_t34_1
+ch04_t34_1_training
+ch05_t34_2
+ch06_renault_nc31
+ch07_vickers_mke_type_bt26
+ch08_type97_chi_ha
+ch09_m5
+ch10_is2
+ch11_110
+ch12_111_1_2_3
+ch15_59_16
+ch16_wz_131
+ch17_wz131_1_wz132
+ch18_wz-120
+ch19_121
+ch20_type58
+ch21_t34
+ch22_113
+//====================================================//
+ 
+//================Французские танки:==================//
+AMX38
+AMX40
+AMX50_Foch
+AMX_105AM
+AMX_12t
+AMX_13F3AM
+AMX_13_75
+AMX_13_90
+AMX_50Fosh_155
+AMX_50_100
+AMX_50_120
+AMX_AC_Mle1946
+AMX_AC_Mle1948
+AMX_M4_1945
+ARL_44
+ARL_V39
+B1
+Bat_Chatillon155
+Bat_Chatillon25t
+BDR_G1B
+D1
+D2
+ELC_AMX
+F10_AMX_50B
+FCM_36Pak40
+FCM_50t
+Hotchkiss_H35
+Lorraine155_50
+Lorraine155_51
+Lorraine39_L_AM
+Lorraine40t
+RenaultBS
+RenaultFT
+RenaultFT_AC
+RenaultUE57
+Somua_Sau_40
+S_35CA
+_105_leFH18B2
+//=================================================//
+ 
+//=================Немецкие танки:=================//
+B-1bis_captured
+Bison_I
+DickerMax
+E-100
+E-50
+E-75
+E50_Ausf_M
+Ferdinand
+G20_Marder_II
+Grille
+G_E
+G_Panther
+G_Tiger
+H39_captured
+Hetzer
+Hummel
+JagdPanther
+JagdPantherII
+JagdPzIV
+JagdPz_E100
+JagdTiger
+JagdTiger_SdKfz_185
+Lowe
+Ltraktor
+Maus
+Panther_II
+Panther_M10
+PanzerJager_I
+Pz35t
+Pz38t
+Pz38_NA
+pzi
+PzII
+PzIII
+PzIII_A
+PzIII_IV
+pziii_training
+PzII_J
+PzII_Luchs
+PzIV
+PzIV_Hydro
+PzIV_schmalturm
+pzi_ausf_c
+PzV
+PzVI
+PzVIB_Tiger_II
+pzvib_tiger_ii_training
+PzVI_Tiger_P
+PzV_PzIV
+PzV_PzIV_ausf_Alfa
+pzv_training
+pz_ii_ausfg
+S35_captured
+StuGIII
+Sturmpanzer_II
+T-15
+T-25
+VK1602
+VK2801
+VK3001H
+VK3001P
+VK3002DB
+VK3601H
+VK4502A
+VK4502P
+Wespe
+White_Tiger
+//===================================================//
+ 
+//================Британские танки:==================//
+GB01_Medium_Mark_I
+GB03_Cruiser_Mk_I
+GB04_Valentine
+GB05_Vickers_Medium_Mk_II
+GB06_Vickers_Medium_Mk_III
+GB07_Matilda
+GB08_Churchill_I
+GB09_Churchill_VII
+GB10_Black_Prince
+GB11_Caernarvon
+GB12_Conqueror
+GB13_FV215b
+GB20_Crusader
+GB21_Cromwell
+GB22_Comet
+GB23_Centurion
+GB24_Centurion_Mk3
+gb32_tortoise
+gb39_universal_carrierqf2
+gb40_gun_carrier_churchill
+gb42_valentine_at
+gb48_fv215b_183
+gb57_alecto
+GB58_Cruiser_Mk_III
+GB59_Cruiser_Mk_IV
+GB60_Covenanter
+GB63_TOG_II
+GB68_Matilda_Black_Prince
+GB69_Cruiser_Mk_II
+GB70_FV4202_105
+GB71_AT_15A
+gb72_at15
+gb73_at2
+gb74_at8
+gb75_at7
+//=====================================================//
+ 
+//================Американские танки:==================//
+M103
+M10_Wolverine
+M12
+M18_Hellcat
+M22_Locust
+M24_Chaffee
+M2_lt
+M2_med
+M36_Slagger
+M37
+M3_Grant
+M3_Stuart
+M40M43
+M41
+M46_Patton
+M48A1
+M4A2E4
+M4A3E8_Sherman
+M4A3E8_sherman_training
+M4_Sherman
+M5_Stuart
+M6
+M6A2E1
+M7_med
+M7_Priest
+M8A1
+MTLS-1G14
+Pershing
+Ram-II
+sexton_i
+Sherman_Jumbo
+T110
+T110E3
+T110E4
+T14
+T18
+T1_Cunningham
+T1_E6
+T1_hvy
+T20
+T21
+T23
+T25_2
+T25_AT
+T26_E4_SuperPershing
+T28
+T28_Prototype
+T29
+T2_lt
+T2_med
+T30
+T32
+T34_hvy
+T40
+T49
+T54E1
+T57
+T57_58
+T69
+T71
+T82
+T92
+T95
+//==================================================//
+ 
+//=================Советские танки:=================//
+A-20
+A-32
+AT-1
+BT-2
+BT-7
+BT-SV
+Churchill_LL
+GAZ-74b
+IS-3
+IS-4
+IS-7
+IS
+IS8
+ISU-152
+KV-13
+KV-1s
+KV-220
+KV-220_action
+KV-3
+KV-5
+KV
+KV1
+KV2
+KV4
+M3_Stuart_LL
+Matilda_II_LL
+MS-1
+Object252
+Object263
+Object268
+Object_212
+Object_261
+Object_704
+Observer
+S-51
+ST_I
+SU-100
+SU-101
+SU-14
+SU-152
+SU-18
+SU-26
+SU-5
+SU-76
+SU-8
+SU-85
+SU100M1
+SU100Y
+SU122_44
+SU122_54
+SU_85I
+T-127
+T-26
+T-28
+T-34-85
+T-34-85_training
+T-34
+T-43
+T-44
+T-46
+T-50
+T-54
+T150
+T62A
+Tetrarch_LL
+T_50_2
+Valentine_LL
+
+						Раскладка Клавиатуры
+						
+Numbers:
+'KEY_0' 'KEY_1' 'KEY_2'
+'KEY_3' 'KEY_4' 'KEY_5'
+'KEY_6' 'KEY_7' 'KEY_8'
+'KEY_9'
+
+General:
+'KEY_A' 'KEY_B' 'KEY_C'
+'KEY_D' 'KEY_E' 'KEY_F'
+'KEY_G' 'KEY_H' 'KEY_I'
+'KEY_J' 'KEY_K' 'KEY_L'
+'KEY_M' 'KEY_N' 'KEY_O'
+'KEY_P' 'KEY_Q' 'KEY_R'
+'KEY_S' 'KEY_T' 'KEY_U'
+'KEY_V' 'KEY_W' 'KEY_X'
+'KEY_Y' 'KEY_Z'
+
+
+Functional:
+'KEY_F1' 'KEY_F2' 'KEY_F3'
+'KEY_F4' 'KEY_F5' 'KEY_F6'
+'KEY_F7' 'KEY_F8' 'KEY_F9'
+'KEY_F10' 'KEY_F11' 'KEY_F12'
+'KEY_F13' 'KEY_F14' 'KEY_F15'
+
+
+Numpad:
+'KEY_NUMLOCK' 'KEY_NUMPAD0' 'KEY_NUMPAD1'
+'KEY_NUMPAD2' 'KEY_NUMPAD3' 'KEY_NUMPAD4'
+'KEY_NUMPAD5' 'KEY_NUMPAD6' 'KEY_NUMPAD7'
+'KEY_NUMPAD8' 'KEY_NUMPAD9' 'KEY_NUMPADCOMMA'
+'KEY_NUMPADENTER' 'KEY_NUMPADEQUALS' 'KEY_NUMPADMINUS'
+'KEY_NUMPADPERIOD' 'KEY_NUMPADSLASH' 'KEY_NUMPADSTAR'
+
+ 
+Mouse:
+'KEY_MOUSE0' 'KEY_MOUSE1' 'KEY_MOUSE2'
+'KEY_MOUSE3' 'KEY_MOUSE4' 'KEY_MOUSE5'
+'KEY_MOUSE6' 'KEY_MOUSE7'
+
+Misc:
+'KEY_END' 'AXIS_LX' 'AXIS_LY'
+'AXIS_RX' 'AXIS_RY' 'KEY_ABNT_C1'
+'KEY_ABNT_C2' 'KEY_ADD' 'KEY_APOSTROPHE'
+'KEY_APPS' 'KEY_AT' 'KEY_AX'
+'KEY_BACKSLASH' 'KEY_BACKSPACE' 'KEY_CALCULATOR'
+'KEY_CAPSLOCK' 'KEY_COLON' 'KEY_COMMA'
+'KEY_CONVERT' 'KEY_DEBUG' 'KEY_DELETE'
+'KEY_DOWNARROW' 'KEY_EQUALS' 'KEY_ESCAPE'
+'KEY_GRAVE' 'KEY_HOME' 'KEY_IME_CHAR'
+'KEY_INSERT' 'KEY_JOY0' 'KEY_JOY1'
+'KEY_JOY10' 'KEY_JOY11' 'KEY_JOY12'
+'KEY_JOY13' 'KEY_JOY14' 'KEY_JOY15'
+'KEY_JOY16' 'KEY_JOY17' 'KEY_JOY18'
+'KEY_JOY19' 'KEY_JOY2' 'KEY_JOY20'
+'KEY_JOY21' 'KEY_JOY22' 'KEY_JOY23'
+'KEY_JOY24' 'KEY_JOY25' 'KEY_JOY26'
+'KEY_JOY27' 'KEY_JOY28' 'KEY_JOY29'
+'KEY_JOY3' 'KEY_JOY30' 'KEY_JOY31'
+'KEY_JOY4' 'KEY_JOY5' 'KEY_JOY6'
+'KEY_JOY7' 'KEY_JOY8' 'KEY_JOY9'
+'KEY_JOYA' 'KEY_JOYAHARD' 'KEY_JOYALDOWN'
+'KEY_JOYALLEFT' 'KEY_JOYALPUSH' 'KEY_JOYALRIGHT'
+'KEY_JOYALUP' 'KEY_JOYARDOWN' 'KEY_JOYARLEFT'
+'KEY_JOYARPUSH' 'KEY_JOYARRIGHT' 'KEY_JOYARUP'
+'KEY_JOYB' 'KEY_JOYBACK' 'KEY_JOYBHARD'
+'KEY_JOYBLACK' 'KEY_JOYBLACKHARD' 'KEY_JOYCIRCLE'
+'KEY_JOYCROSS' 'KEY_JOYDDOWN' 'KEY_JOYDLEFT'
+'KEY_JOYDRIGHT' 'KEY_JOYDUP' 'KEY_JOYL1'
+'KEY_JOYL2' 'KEY_JOYLTRIGGER' 'KEY_JOYLTRIGGERHARD'
+'KEY_JOYR1' 'KEY_JOYR2' 'KEY_JOYRTRIGGER'
+'KEY_JOYRTRIGGERHARD' 'KEY_JOYSELECT' 'KEY_JOYSQUARE'
+'KEY_JOYSTART' 'KEY_JOYTRIANGLE' 'KEY_JOYWHITE'
+'KEY_JOYWHITEHARD' 'KEY_JOYX' 'KEY_JOYXHARD'
+'KEY_JOYY' 'KEY_JOYYHARD' 'KEY_KANA'
+'KEY_KANJI' 'KEY_LALT' 'KEY_LBRACKET'
+'KEY_LCDKB_CANCEL' 'KEY_LCDKB_DOWN' 'KEY_LCDKB_LEFT'
+'KEY_LCDKB_MENU' 'KEY_LCDKB_OK' 'KEY_LCDKB_RIGHT'
+'KEY_LCDKB_UP' 'KEY_LCONTROL' 'KEY_LEFTARROW'
+'KEY_LEFTMOUSE' 'KEY_LSHIFT' 'KEY_LWIN'
+'KEY_MAIL' 'KEY_MEDIASELECT' 'KEY_MEDIASTOP'
+'KEY_MIDDLEMOUSE' 'KEY_MINUS' 'KEY_MUTE'
+'KEY_MYCOMPUTER' 'KEY_NEXTTRACK' 'KEY_NOCONVERT'
+'KEY_NONE' 'KEY_NOT_FOUND' 'KEY_NULL' 'KEY_OEM_102'
+'KEY_PAUSE' 'KEY_PERIOD' 'KEY_PGDN'
+'KEY_PGUP' 'KEY_PLAYPAUSE' 'KEY_POWER'
+'KEY_PREVTRACK' 'KEY_RALT' 'KEY_RBRACKET'
+'KEY_RCONTROL' 'KEY_RETURN' 'KEY_RIGHTARROW'
+'KEY_RIGHTMOUSE' 'KEY_RSHIFT' 'KEY_RWIN'
+'KEY_SCROLL' 'KEY_SEMICOLON' 'KEY_SLASH'
+'KEY_SLEEP' 'KEY_SPACE' 'KEY_STOP'
+'KEY_SYSRQ' 'KEY_TAB' 'KEY_UNDERLINE'
+'KEY_UNLABELED' 'KEY_UPARROW' 'KEY_VOLUMEDOWN'
+'KEY_VOLUMEUP' 'KEY_WAKE' 'KEY_WEBBACK'
+'KEY_WEBFAVORITES' 'KEY_WEBFORWARD' 'KEY_WEBHOME'
+'KEY_WEBREFRESH' 'KEY_WEBSEARCH' 'KEY_WEBSTOP'
+'KEY_YEN' 'MODIFIER_ALT' 'MODIFIER_CTRL'
+'MODIFIER_SHIFT'
