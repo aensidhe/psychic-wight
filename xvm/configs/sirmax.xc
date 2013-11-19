@@ -44,6 +44,7 @@
   "login": {
     "skipIntro": true,
     "autologin": true,
+    "confirmOldReplays": true,
     "pingServers": ${"def.pingServers"}
   },
   "hangar": {
@@ -56,6 +57,7 @@
   },
   "userInfo": {
      "inHangarFilterEnabled": true,
+     "startPage": 4,
      //"sortColumn": 5,
      "sortColumn": -3,
      "defaultFilterValue": "+all -premium -master -arty"
