@@ -140,10 +140,10 @@
 	
 	<!-- Настройка всплывающего сообщения о последнем полученном уроне -->
 	<damageHit visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="0" y="-120" center="true"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет от верхнего левого угла панели. center - включение отсчета x координаты от центра экрана, true/false - включено/выключено -->
-		<text alpha="100" width="500" height="100"/> <!-- alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). width, height - ширина и высота поля -->
+		<location x="350" y="-80" center="false"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет от верхнего левого угла панели. center - включение отсчета x координаты от центра экрана, true/false - включено/выключено -->
+		<text alpha="100" width="450" height="60"/> <!-- alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). width, height - ширина и высота поля -->
 		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format><![CDATA[<b><font face='Cuprum' size='40' color='#FFFFFF'><font color='{{c:dmgKind}}'>-{{dmg-one}}</font>{{n}}<font color='{{c:vehType}}'>{{atk-veh-short}}</font><tab><font color='{{c:shellGold}}'>{{atk-shell}}</font></font></b>]]></format> <!-- HTML-строка. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+		<format><![CDATA[<b><font face='Cuprum' size='20' color='#FFFFFF'><font color='{{c:dmgKind}}'>-{{dmg-one}}</font>{{t}}<font color='{{c:vehType}}'>{{atk-veh-short}}</font>{{t}}<font color='{{c:shellGold}}'>{{atk-shell}}</font></font></b>]]></format> <!-- HTML-строка. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
 		<delay>7</delay> <!-- Время, после которого сообщение исчезнет -->
 	</damageHit>
 	
