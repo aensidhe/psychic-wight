@@ -8,3 +8,4 @@ WoT mod pack from AenSidhe.
 3. Standard damage panel by GambitER.
 4. Подробная сессионная статистика.
 5. Белые шкурки подбитых танков.
+6. Роза команд.
