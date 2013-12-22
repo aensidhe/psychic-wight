@@ -7,3 +7,4 @@ WoT mod pack from AenSidhe.
 2. DDar's icons.
 3. Standard damage panel by GambitER.
 4. Подробная сессионная статистика.
+5. Белые шкурки подбитых танков.
