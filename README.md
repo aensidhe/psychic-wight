@@ -1,11 +1,13 @@
 psychic-wight
 =============
 
-WoT mod pack from AenSidhe.
+Modpack for World of Tanks 0.8.10
+
 1. XVM 3025.
-1.1. XVM Tank Carousel mod
-2. Dar's icons.
-3. Standard damage panel by GambitER.
-4. Подробная сессионная статистика.
-5. Белые шкурки подбитых танков.
-6. Роза команд.
+2. XVM Tank Carousel mod
+3. Dar's icons.
+4. Standard damage panel by GambitER.
+5. Подробная сессионная статистика.
+6. Белые шкурки подбитых танков.
+7. Роза команд.
+
