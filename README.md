@@ -2,6 +2,7 @@ psychic-wight
 =============
 
 WoT mod pack from AenSidhe.
-* XVM 3025.
-* DDar's icons.
-* Standard damage panel by GambitER.
+1. XVM 3025.
+1.1. XVM Tank Carousel mod
+2. DDar's icons.
+3. Standard damage panel by GambitER.
