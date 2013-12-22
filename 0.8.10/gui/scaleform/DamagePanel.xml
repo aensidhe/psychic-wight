@@ -71,13 +71,13 @@
 
 	<!-- Список истории полученного урона -->
 	<configListLog visible = "true"> <!-- visible (true, false) - отображает элемент -->
-		<noDamage add = "false"/> <!-- add (true, false) - добавление в лог полученного урона непробитий/рикошетов -->
+		<noDamage add = "true"/> <!-- add (true, false) - добавление в лог полученного урона непробитий/рикошетов -->
 		<lineHit updown = "up"/> <!-- updown (up, down) - последний урон добавляется наверх списка истории полученного урона (при updown = "up") или в его низ (при updown = "down") -->
 		<addFire total = "true"/> <!-- total (true, false) - cуммирование урона от пожара в списке полученного урона -->
 		<location x = "235" y = "-5" centerX = "false" centerY = "false"/> <!-- x, y, - координаты расположения элемента относительно центра экрана (при centerX/centerY = "true") или верхнего левого угла панели (при centerX/centerY = "false") -->
 		<size width = "1500" height = "236"/> <!-- width - ширина элемента. height - высота элемента -->
 		<filter size = "5" angle = "90" distance = "0" color = "0x000000" alpha = "100" strength = "250"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени. strength - степень нанесения тени -->
-		<format><![CDATA[<textformat leading='4' tabstops='[25,60,100,200]'><font face='$UniversCondC' color='#FFFFFF' size='15'><font color='#999999' size='13'>{{number}}.</font><tab><font color='{{clr-dmg-reason}}'><b>{{dmg-one}}</b></font><tab>{{dmg-reason}}<tab><font color='{{clr-tank-team}}'>{{tank-class}}  {{tank-shortname}}</font></font></textformat>]]></format> <!-- текст, который отображает строку в списке истории полученного урона (есть возможность подстановки макросов, перечисленных в конце данного файла настроек) -->
+		<format><![CDATA[<textformat leading='4' tabstops='[25,60,100,175]'><font face='$UniversCondC' color='#FFFFFF' size='15'><font color='#999999' size='13'>{{number}}.</font><tab><font color='{{clr-dmg-reason}}'><b>{{dmg-one}}</b></font><tab>{{dmg-reason}}<tab><font color='{{clr-tank-team}}'>{{tank-class}}  {{tank-shortname}}<tab>{{tank-reload}}</font></font></textformat>]]></format> <!-- текст, который отображает строку в списке истории полученного урона (есть возможность подстановки макросов, перечисленных в конце данного файла настроек) -->
 		<format_key><![CDATA[<textformat leading='4' tabstops='[25,60,100,200]'><font face='$UniversCondC' color='#FFFFFF' size='15'><font color='#999999' size='13'>{{number}}.</font><tab><font color='{{clr-dmg-reason}}'><b>{{dmg-ratio-one}}%</b></font><tab>{{dmg-reason}}<tab><font color='{{clr-tank-team}}'>{{tank-class}}  {{tank-nick}}</font></font></textformat>]]></format_key> <!-- текст, который отображает строку (при нажатии альтернативной клавиши) в списке истории полученного урона (есть возможность подстановки макросов, перечисленных в конце данного файла настроек) -->
 	</configListLog>
 	
