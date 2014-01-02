@@ -49,6 +49,9 @@
   },
   "hangar": {
     "hideTutorial": false,
+    "masteryMarkInTankCarousel": true,
+    "masteryMarkInTechTree": true,
+    "showExtraDataInProfile": true,
     "widgetsEnabled": true,
     "pingServers": {
       "$ref": { "path":"def.pingServers" },
@@ -87,10 +90,12 @@
   "fragCorrelation": {
     "hideTeamTextFields": true
   },
+  "captureBar": {
+    "enabled": true
+  },
   "hotkeys": {
     "minimapZoom": { "enabled": false, "onHold": true, "keyCode": 17 }
   },
-
   "battleLoading": {
     "showChances": true,
     "showChancesExp": true,

@@ -33,10 +33,10 @@
 
     // X position (negative values - bind to right side of screen).
     // Позиция X (отрицательные значения - привязать к правой стороне экрана).
-    "x": 500,
+    "x": 275,
     // Y position (negative values - bind to bottom side of screen).
     // Позиция Y (отрицательные значения - привязать к нижней стороне экрана).
-    "y": -400,
+    "y": 0,
     // Width.
     // Ширина.
     "w": 500,
@@ -48,7 +48,7 @@
     "lines": 10,
     // Log direction: up - lines will be added from up to down, down - from down to up.
     // Направление лога: up - строки добавляются сверху, down - снизу.
-    "direction": "up",
+    "direction": "down",
     // Group hits by players name.
     // Группировать попадания по имени игрока.
     "groupHitsByPlayer": true,
