@@ -69,10 +69,10 @@
       "width": 46,
       // Display format for the left panel (macros allowed, see readme-en.txt).
       // Формат отображения для левой панели (допускаются макроподстановки, см. readme-ru.txt).
-      "formatLeft": "<font face='Consolas' size='12' color='{{c:xwn}}'>{{nick}}</font>",
+      "formatLeft": "<font face='Consolas' size='12' color='{{c:xwn8}}'>{{nick}}</font>",
       // Display format for the right panel (macros allowed, see readme-en.txt).
       // Формат отображения для правой панели (допускаются макроподстановки, см. readme-ru.txt).
-      "formatRight": "<font face='Consolas' size='12' color='{{c:xwn}}'>{{nick}}</font>"
+      "formatRight": "<font face='Consolas' size='12' color='{{c:xwn8}}'>{{nick}}</font>"
     },
     // Options for the "medium2" panels - the second of the medium panels.
     // Режим ушей "medium2" - вторые средние уши в игре.
@@ -82,10 +82,10 @@
       "width": 65,
       // Display format for the left panel (macros allowed, see readme-en.txt).
       // Формат отображения для левой панели (допускаются макроподстановки, см. readme-ru.txt).
-      "formatLeft": "<font face='Consolas' size='12' color='{{c:xwn}}'>{{nick}}</font>",
+      "formatLeft": "<font face='Consolas' size='12' color='{{c:xwn8}}'>{{nick}}</font>",
       // Display format for the right panel (macros allowed, see readme-en.txt).
       // Формат отображения для правой панели (допускаются макроподстановки, см. readme-ru.txt).
-      "formatRight": "<font face='Consolas' size='12' color='{{c:xwn}}'>{{nick}}</font>"
+      "formatRight": "<font face='Consolas' size='12' color='{{c:xwn8}}'>{{nick}}</font>"
     },
     // Options for the "large" panels - the widest panels.
     // Режим ушей "large" - широкие уши в игре.
@@ -95,8 +95,8 @@
       "width": 120,
       // Display format for player nickname (macros allowed, see readme-en.txt).
       // Формат отображения имени игрока (допускаются макроподстановки, см. readme-ru.txt).
-      "nickFormatLeft": "<font face='Consolas' size='12' color='{{c:rating}}'>{{rating}}</font> <font face='Consolas' size='12' color='{{c:xwn}}'>{{nick}}</font>",
-      "nickFormatRight": "<font face='Consolas' size='12' color='{{c:xwn}}'>{{nick}}</font> <font face='Consolas' size='12' color='{{c:rating}}'>{{rating}}</font>",
+      "nickFormatLeft": "<font face='Consolas' size='12' color='{{c:rating}}'>{{rating}}</font> <font face='Consolas' size='12' color='{{c:xwn8}}'>{{nick}}</font>",
+      "nickFormatRight": "<font face='Consolas' size='12' color='{{c:xwn8}}'>{{nick}}</font> <font face='Consolas' size='12' color='{{c:rating}}'>{{rating}}</font>",
       // Display format for vehicle name (macros allowed, see readme-en.txt).
       // Формат отображения названия танка (допускаются макроподстановки, см. readme-ru.txt).
       "vehicleFormatLeft": "",

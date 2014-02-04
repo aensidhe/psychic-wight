@@ -39,10 +39,10 @@
 
   // Game Region
   // "auto" - automatically detect game region from game client,
-  // or specify one of: "RU", "EU", "US", "SEA", "VTC", "KR"
+  // or specify one of: "RU", "EU", "NA", "SG", "VTC", "KR"
   // Регион (игровой кластер)
   // "auto" - автоматически определять регион из клиента игры,
-  // или укажите один из: "RU", "EU", "US", "SEA", "VTC", "KR"
+  // или укажите один из: "RU", "EU", "NA", "SG", "VTC", "KR"
   "region": "auto",
 
   // Common config options. All settings information in the mod not being used.
@@ -62,7 +62,7 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "22.12.2013",
+    "date": "04.02.2014",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
@@ -97,8 +97,8 @@
   // Внутриигровая панель критов от навыка "эксперт".
   "expertPanel": ${"battle.xc":"expertPanel"},
 
-  // Options for player statistics (only with xvm-stat).
-  // Блок управлением статистикой (только с xvm-stat).
+  // Options for player statistics.
+  // Блок управлением статистикой.
   "rating": ${"rating.xc":"rating"},
 
   // Special XVM hotkeys.

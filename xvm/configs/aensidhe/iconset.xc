@@ -5,7 +5,7 @@
 {
   "iconset": {
     // Folder containing the icon set for Battle Loading Screen.
-    // Набор иконок для экрана загрузки боя.  
+    // Набор иконок для экрана загрузки боя.
     "battleLoadingAlly": "contour/",
     "battleLoadingEnemy": "contour/",
     // Folder containing the icon set for Battle Statistics Form (pressing "Tab").

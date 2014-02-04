@@ -5,10 +5,10 @@
     "standardMarkers": false,
 
     "formatNick":  "{{name}}{{clan}}",
-    "formatVehicle":  "<font face='Consolas' size='11'><font color='{{c:avglvl}}'>{{avglvl}}</font> <font face='Symbol' color='#111111'><b><font color='{{c:tdv}}'>·</font><font color='{{c:tfb}}'>·</font><font color='{{c:tsb}}'>·</font></b></font> <font color='{{c:e}}'>{{e}}</font>|<font color='{{c:xeff}}'>{{xeff}}</font>|<font color='{{c:xwn}}'>{{xwn}}</font> <font color='{{c:kb}}'>{{kb:3}}</font></font>",
+    "formatVehicle":  "<font face='Consolas' size='11'><font color='{{c:avglvl}}'>{{avglvl}}</font> <font face='Symbol' color='#111111'><b><font color='{{c:tdv}}'>·</font><font color='{{c:tfb}}'>·</font><font color='{{c:tsb}}'>·</font></b></font> <font color='{{c:e}}'>{{e}}</font>|<font color='{{c:xeff}}'>{{xeff}}</font>|<font color='{{c:xwn8}}'>{{xwn8}}</font> <font color='{{c:kb}}'>{{kb:3}}</font></font>",
 
-    "markersStat": "<b><font face='Symbol' color='#CCCCCC' size='11'><font color='{{c:t-battles}}'>·</font> <font color='{{c:e}}'>·</font> <font color='{{c:xeff}}'>·</font> <font color='{{c:xwn}}'>·</font></font></b>",
-    "markersStatAlt": "<b><font face='$FieldFont' size='12'><font color='{{c:t-battles}}'>{{t-hb}}</font> <font color='{{c:e}}'>{{teff}}</font> <font color='{{c:xeff}}'>{{xeff}}</font> <font color='{{c:xwn}}'>{{xwn}}</font> <font color='{{c:rating}}'>{{rating}}</font></font></b>",
+    "markersStat": "<b><font face='Symbol' color='#CCCCCC' size='11'><font color='{{c:t-battles}}'>·</font> <font color='{{c:e}}'>·</font> <font color='{{c:xeff}}'>·</font> <font color='{{c:xwn8}}'>·</font></font></b>",
+    "markersStatAlt": "<b><font face='$FieldFont' size='12'><font color='{{c:t-battles}}'>{{t-hb}}</font> <font color='{{c:e}}'>{{teff}}</font> <font color='{{c:xeff}}'>{{xeff}}</font> <font color='{{c:xwn8}}'>{{xwn8}}</font> <font color='{{c:rating}}'>{{rating}}</font></font></b>",
 
     "damageMessageAlive": "{{dmg}}",
     "damageMessageAllyDead": "({{dmg}})",
@@ -18,7 +18,7 @@
 
     "markers": {
       "vehicleIconColor": null,
-      //"vehicleIconColor": "{{c:xwn}}",
+      //"vehicleIconColor": "{{c:xwn8}}",
       "ally": {
       },
       "enemy": {
@@ -51,7 +51,7 @@
     "hideTutorial": false,
     "masteryMarkInTankCarousel": true,
     "masteryMarkInTechTree": true,
-    "showExtraDataInProfile": true,
+    "hidePricesInTechTree": true,
     "widgetsEnabled": true,
     "pingServers": {
       "$ref": { "path":"def.pingServers" },
@@ -59,11 +59,12 @@
     }
   },
   "userInfo": {
-     "inHangarFilterEnabled": true,
-     "startPage": 4,
-     //"sortColumn": 5,
-     "sortColumn": -3,
-     "defaultFilterValue": "+all -premium -master -arty"
+    "inHangarFilterEnabled": true,
+    "startPage": 4,
+    //"sortColumn": 5,
+    "sortColumn": -3,
+    "showExtraDataInProfile": true,
+    "defaultFilterValue": "+all -premium -master -arty"
   },
   "squad": {
     "enabled": true,
@@ -82,6 +83,7 @@
   },
   "rating": {
     "showPlayersStatistics": true,
+    //"showPlayersStatistics": false,
     "loadEnemyStatsInFogOfWar": true,
     "enableStatisticsLog": true,
     "enableUserInfoStatistics": true,
@@ -98,7 +100,7 @@
   },
   "battleLoading": {
     "showChances": true,
-    "showChancesExp": true,
+    "showChancesLive": true,
     "removeSquadIcon": false,
     "clanIcon": { "show": true, "x": -345, "xr": -345, "y": 4, "h": 16, "w": 16, "alpha": 90 },
     //"clanIcon": { "show": true, "x": 4, "xr": 4, "y": 6, "h": 16, "w": 16, "alpha": 90 },
@@ -109,7 +111,7 @@
   },
   "statisticForm": {
     "showChances": true,
-    "showChancesExp": true,
+    "showChancesLive": true,
     "clanIcon": { "show": true, "x": -345, "xr": -345, "y": 4, "h": 16, "w": 16, "alpha": 90 },
     //"clanIcon": { "show": true, "x": 4, "xr": 4, "y": 6, "h": 16, "w": 16, "alpha": 90 },
     "formatLeftNick":  ${"def.formatNick"},
@@ -124,20 +126,22 @@
     "clanIcon": { "show": true, "x": 4, "y": 6, "h": 16, "w": 16, "alpha": 90 },
     "medium": {
       "width": 120,
-      "formatLeft": "<font color='{{c:xwn}}'>{{nick}}</font>",
-      "formatRight": "<font color='{{c:xwn}}'>{{nick}}</font>"
+      "formatLeft": "<font color='{{c:xwn8}}'>{{nick}}</font>",
+      "formatRight": "<font color='{{c:xwn8}}'>{{nick}}</font>"
     },
     "medium2": {
       "width": 120,
-      "formatLeft": "<font color='{{c:xwn}}'>{{vehicle}}</font>",
-      "formatRight": "<font color='{{c:xwn}}'>{{vehicle}}</font>"
+      "formatLeft": "<font color='{{c:xwn8}}'>{{vehicle}}</font>",
+      "formatRight": "<font color='{{c:xwn8}}'>{{vehicle}}</font>"
     },
     "large": {
       "width": 120,
-      "nickFormatLeft": "<font color='{{c:xwn}}'>{{xwn}}</font> {{name}}<font color='#cccccc'>{{clan}}</font>",
-      "nickFormatRight": "{{name}}<font color='#cccccc'>{{clan}}</font> <font color='{{c:xwn}}'>{{xwn}}</font>",
+      "nickFormatLeft": "<font color='{{c:xwn8}}'>{{xwn8}}</font> {{name}}<font color='#cccccc'>{{clan}}</font>",
+      "nickFormatRight": "{{name}}<font color='#cccccc'>{{clan}}</font> <font color='{{c:xwn8}}'>{{xwn8}}</font>",
       "vehicleFormatLeft": "",
       "vehicleFormatRight": ""
+      //"vehicleFormatLeft": "<font color='{{c:rating}}'>{{rating}}</font>",
+      //"vehicleFormatRight": "<font color='{{c:rating}}'>{{rating}}</font>"
     },
     "enemySpottedMarker": {
       "enabled": true,
@@ -157,8 +161,8 @@
   },
   "battleResults": {
     "startPage": 1,
-    "showChances": true,
-    "showChancesExp": true
+    "showTotals": true,
+    "showChances": true
   },
   "minimap": {
     "enabled": true,

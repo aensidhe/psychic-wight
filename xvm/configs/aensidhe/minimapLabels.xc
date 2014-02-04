@@ -10,16 +10,16 @@
       // {{vehicle-class}} macro substitutions.
       // Подстановки макроса {{vehicle-class}}.
       "vehicleclassmacro": {
-        // ЛT ♦.
+        // LT / ЛT ♦.
         "light": "\u2022",
-        // СТ.
+        // MT / СТ.
         "medium": "\u2022",
-        // ТТ.
+        // HT / ТТ.
         "heavy": "\u2022",
-        // ПТ ▼.
+        // TD / ПТ ▼.
         "td": "\u2022",
-        // Artillery / Арта.
-        "spg": "\u2022",
+        // Artillery / Арта. ■
+        "spg": "\u25AA",
         // HeavyTank10 by gui_settings.xml.
         // ТТ10 посредством gui_settings.xml.
         "superh": ""
@@ -72,8 +72,8 @@
           // Мертвый взводный.
           "deadsquad":      "<span class='mm_dot'>{{vehicle-class}}</span><span class='mm_ds'><i>{{short-nick}}</i></span>"
         },
-        // CSS style.
-        // CSS стиль.
+        // CSS style (fonts and colors option)
+        // CSS стиль (настройка шрифтов и цветов)
         "css": {
           "ally":            ".mm_a{font-family:$FieldFont; font-size:4px; color:#C8FFA6;}",
           "teamkiller":      ".mm_t{font-family:$FieldFont; font-size:4px; color:#A6F8FF;}",

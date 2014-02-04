@@ -8,12 +8,9 @@
     // Формат часов на экране загрузки боя.
     // http://php.net/date
     "clockFormat": "H:i:s",
-    // true - Enable display of "chance to win" Read more: http://www.koreanrandom.com/forum/topic/1663-/
-    // true - включить отображение шансов на победу Прочитать подробней: http://www.koreanrandom.com/forum/topic/1663-/
+    // true - Enable display of "chance to win". Read more: http://www.koreanrandom.com/forum/topic/1663-/
+    // true - включить отображение шансов на победу. Прочитать подробней: http://www.koreanrandom.com/forum/topic/1663-/
     "showChances": false,
-    // Show experimental "chance to win" formula.
-    // Показывать экспериментальную формулу расчета шансов.
-    "showChancesExp": false,
     // true - Disable Platoon icons. This blank space can house, for example, clan logos.
     // true - убрать отображение иконки взвода. На пустое поле можно вывести, например, иконку клана.
     "removeSquadIcon": false,
@@ -45,7 +42,7 @@
       // Прозрачность иконки игрока/клана.
       "alpha": 90
     },
-	// Display format for the left panel (macros allowed, see readme-en.txt).
+    // Display format for the left panel (macros allowed, see readme-en.txt).
     // Формат отображения для левой панели (допускаются макроподстановки, см. readme-ru.txt).
     "formatLeftNick": "{{name}}{{clan}}",
     // Display format for the right panel (macros allowed, see readme-en.txt).
@@ -53,9 +50,9 @@
     "formatRightNick": "{{name}}{{clan}}",
     // Display format for the left panel (macros allowed, see readme-en.txt).
     // формат отображения для левой панели (допускаются макроподстановки, см. readme-ru.txt)
-    "formatLeftVehicle": "<font face='Consolas' size='12' color='{{c:kb}}'>{{kb:3}}</font> | <font face='Consolas' size='12' color='{{c:xwn}}'>{{xwn}}</font> | <font face='Consolas' size='12' color='{{c:rating}}'>{{rating:3}}</font>",
+    "formatLeftVehicle": "<font face='Consolas' size='12' color='{{c:kb}}'>{{kb:3}}</font> | <font face='Consolas' size='12' color='{{c:xwn8}}'>{{xwn8}}</font> | <font face='Consolas' size='12' color='{{c:rating}}'>{{rating:3}}</font>",
 	// Display format for the right panel (macros allowed, see readme-en.txt).    
 	// формат отображения для правой панели (допускаются макроподстановки, см. readme-ru.txt)
-    "formatRightVehicle": "<font face='Consolas' size='12' color='{{c:rating}}'>{{rating:3}}</font> | <font face='Consolas' size='12' color='{{c:xwn}}'>{{xwn}}</font> | <font face='Consolas' size='12' color='{{c:kb}}'>{{kb:3}}</font>"
+    "formatRightVehicle": "<font face='Consolas' size='12' color='{{c:rating}}'>{{rating:3}}</font> | <font face='Consolas' size='12' color='{{c:xwn8}}'>{{xwn8}}</font> | <font face='Consolas' size='12' color='{{c:kb}}'>{{kb:3}}</font>"
   }
 }
