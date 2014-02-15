@@ -62,15 +62,15 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "04.02.2014",
+    "date": "15.02.2014",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "0.8.10",
+    "gameVersion": "0.8.11",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "5.0.0"
+    "modMinVersion": "5.1.0"
   },
 
   // Parameters for login screen.

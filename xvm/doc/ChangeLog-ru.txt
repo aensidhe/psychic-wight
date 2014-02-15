@@ -1,3 +1,14 @@
+XVM-5.1.0:
+  * адаптация к WoT 0.8.11
+
+  [НОВЫЕ ФУНКЦИИ]
+  * новые опции:
+      (battleLoading|battleResults|statisticForm)/showBattleTier - показывать уровень боя
+
+  [ДРУГОЕ]
+  * рейтинг WN по умолчанию изменен на WN8
+  * опция statisticForm/showChancesExp переименована в showChancesLive
+
 XVM-5.0.2:
   * адаптация к WoT 0.8.10
 

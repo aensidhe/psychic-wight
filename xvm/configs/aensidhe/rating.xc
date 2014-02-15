@@ -1,6 +1,6 @@
 ﻿/**
- * Options for player statistics.
- * Блок управлением статистикой.
+ * Options for player statistics
+ * Блок управлением статистикой
  */
 {
   "rating": {

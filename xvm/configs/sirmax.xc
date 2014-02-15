@@ -4,7 +4,7 @@
     //"standardMarkers": true,
     "standardMarkers": false,
 
-    "formatNick":  "{{name}}{{clan}}",
+    "formatNick":  "{{name}}<font alpha='#A0'>{{clan}}</font>",
     "formatVehicle":  "<font face='Consolas' size='11'><font color='{{c:avglvl}}'>{{avglvl}}</font> <font face='Symbol' color='#111111'><b><font color='{{c:tdv}}'>·</font><font color='{{c:tfb}}'>·</font><font color='{{c:tsb}}'>·</font></b></font> <font color='{{c:e}}'>{{e}}</font>|<font color='{{c:xeff}}'>{{xeff}}</font>|<font color='{{c:xwn8}}'>{{xwn8}}</font> <font color='{{c:kb}}'>{{kb:3}}</font></font>",
 
     "markersStat": "<b><font face='Symbol' color='#CCCCCC' size='11'><font color='{{c:t-battles}}'>·</font> <font color='{{c:e}}'>·</font> <font color='{{c:xeff}}'>·</font> <font color='{{c:xwn8}}'>·</font></font></b>",
@@ -100,7 +100,7 @@
   },
   "battleLoading": {
     "showChances": true,
-    "showChancesLive": true,
+    "showBattleTier": true,
     "removeSquadIcon": false,
     "clanIcon": { "show": true, "x": -345, "xr": -345, "y": 4, "h": 16, "w": 16, "alpha": 90 },
     //"clanIcon": { "show": true, "x": 4, "xr": 4, "y": 6, "h": 16, "w": 16, "alpha": 90 },
@@ -112,6 +112,7 @@
   "statisticForm": {
     "showChances": true,
     "showChancesLive": true,
+    "showBattleTier": true,
     "clanIcon": { "show": true, "x": -345, "xr": -345, "y": 4, "h": 16, "w": 16, "alpha": 90 },
     //"clanIcon": { "show": true, "x": 4, "xr": 4, "y": 6, "h": 16, "w": 16, "alpha": 90 },
     "formatLeftNick":  ${"def.formatNick"},
@@ -162,7 +163,8 @@
   "battleResults": {
     "startPage": 1,
     "showTotals": true,
-    "showChances": true
+    "showChances": true,
+    "showBattleTier": true
   },
   "minimap": {
     "enabled": true,
