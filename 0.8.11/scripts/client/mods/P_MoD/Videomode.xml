@@ -1,0 +1,20 @@
+<Videomode.xml>
+	<!--	
+		Редактируйте только Notepad++ или ему подобным редактором.
+		Скачать можно тут: http://notepad-plus-plus.org/download 
+		
+		Модуль "Videomode" позволяет:
+			Включить свободную камеру при просмотре реплея.
+
+		*true - модуль включен
+		*false - модуль отключен
+	-->	
+	<enable>true</enable>
+	
+	<!--	
+		Кнопка по которой открываеться / закрываеться Свободная камера.
+		
+		от KEY_F1 до KEY_F12
+	-->		
+	<activateKey>KEY_F3</activateKey>
+</Videomode.xml>

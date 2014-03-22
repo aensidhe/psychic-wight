@@ -1,0 +1,13 @@
+<NoBinoculars.xml>
+	<!--
+		Редактируйте только Notepad++ или ему подобным редактором.
+		Скачать можно тут: http://notepad-plus-plus.org/download 
+		
+		Модуль "NoBinoculars" позволяет:
+			Отключить затемнения в снайперском режиме.
+		
+		*true - модуль включен
+		*false - модуль отключен
+	-->	
+	<enable>true</enable>
+</NoBinoculars.xml>
