@@ -4,9 +4,6 @@
  */
 {
   "labels": {
-      // Maximum nickname size for {{short-nick}} macro.
-      // Максимальный размер ника для макроса {{short-nick}}.
-      "nickShrink": 5,
       // {{vehicle-class}} macro substitutions.
       // Подстановки макроса {{vehicle-class}}.
       "vehicleclassmacro": {
@@ -41,28 +38,28 @@
         // Формат поля.
         "format": {
           // Союзник.
-          "ally":           "<span class='mm_a'>{{vehicle}}\n{{short-nick}}</span>",
+          "ally":           "<span class='mm_a'>{{vehicle}}\n{{nick%.5s}}</span>",
           // Тимкиллер.
-          "teamkiller":     "<span class='mm_t'>{{vehicle}}\n{{short-nick}}</span>",
+          "teamkiller":     "<span class='mm_t'>{{vehicle}}\n{{nick%.5s}}</span>",
           // Враг.
-          "enemy":          "<span class='mm_e'>{{vehicle}}\n{{short-nick}}</span>",
+          "enemy":          "<span class='mm_e'>{{vehicle}}\n{{nick%.5s}}</span>",
           // Взводный.
-          "squad":          "<textformat leading='-2'><span class='mm_s'><i>{{short-nick}}</i>\n{{vehicle}}</span><textformat>",
+          "squad":          "<textformat leading='-2'><span class='mm_s'><i>{{nick%.5s}}</i>\n{{vehicle}}</span><textformat>",
           // Own marker or spectated subject.
           // Свой маркер и маркер приёмника камеры наблюдения в случае смерти.
           "oneself":        "",
           // Out of radio range ally
           // Союзник, с которым потеряна связь
-          "lostally":       "<span class='mm_dot'>{{vehicle-class}}</span><span class='mm_la'><i>{{vehicle}}\n{{short-nick}}</i></span>",
+          "lostally":       "<span class='mm_dot'>{{vehicle-class}}</span><span class='mm_la'><i>{{vehicle}}\n{{nick%.5s}}</i></span>",
           // Out of radio range teamkiller
           // Тимкиллер, с которым потеряна связь
-          "lostteamkiller": "<span class='mm_dot'>{{vehicle-class}}</span><span class='mm_lt'><i>{{vehicle}}\n{{short-nick}}</i></span>",
+          "lostteamkiller": "<span class='mm_dot'>{{vehicle-class}}</span><span class='mm_lt'><i>{{vehicle}}\n{{nick%.5s}}</i></span>",
           // Lost enemy units.
           // Противник, пропавший из засвета
-          "lost":           "<span class='mm_dot'>{{vehicle-class}}</span><span class='mm_l'><i>{{vehicle}}\n{{short-nick}}</i></span>",
+          "lost":           "<span class='mm_dot'>{{vehicle-class}}</span><span class='mm_l'><i>{{vehicle}}\n{{nick%.5s}}</i></span>",
           // Out of radio range squadman
           // Взводный, с которым потеряна связь
-          "lostsquad":      "<textformat leading='-4'><span class='mm_dot'>{{vehicle-class}}</span><span class='mm_ls'><i>{{short-nick}}</i>\n   {{vehicle}}</span><textformat>",
+          "lostsquad":      "<textformat leading='-4'><span class='mm_dot'>{{vehicle-class}}</span><span class='mm_ls'><i>{{nick%.5s}}</i>\n   {{vehicle}}</span><textformat>",
           // Мертвый союзник.
           "deadally":       "<span class='mm_dot'>{{vehicle-class}}</span><span class='mm_da'></span>",
           // Мертвый тимкиллер.
@@ -70,7 +67,7 @@
           // Мертвый противник.
           "deadenemy":      "<span class='mm_dot'>{{vehicle-class}}</span><span class='mm_de'></span>",
           // Мертвый взводный.
-          "deadsquad":      "<span class='mm_dot'>{{vehicle-class}}</span><span class='mm_ds'><i>{{short-nick}}</i></span>"
+          "deadsquad":      "<span class='mm_dot'>{{vehicle-class}}</span><span class='mm_ds'><i>{{nick%.5s}}</i></span>"
         },
         // CSS style (fonts and colors option)
         // CSS стиль (настройка шрифтов и цветов)
