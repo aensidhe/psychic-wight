@@ -1,0 +1,37 @@
+/*
+	// Игровой чат в бою.
+	// Ingame chat in battle.
+*/
+{
+	// true - включить модуль.
+	// true - enable the module.
+	"enable": false,
+	
+	// Фильтр игрового чата.
+	// Ingame chat filter.
+	"cleaner": {
+		
+		// true - включить функцию.
+		// true - enable function.
+		"enable": false,
+		
+		// Список предложений по которым удаляются сообщения.
+		// List of proposals which deletes the message.
+		"mask": ["в свете", "мешай стрелять", "мам", "пап", "как танк"]
+	},
+	
+	// Информер результатов о завершенном бое в чат.
+	// Informer results of completed battle to chat.
+	"resultInformer": {
+		
+		// true - включить функцию.
+		// true - enable function.
+		"enable": false,
+		
+		// Текстовые сообщения в чат. {{map}} - название карты, {{vehicle}} - название техники.
+		// Text messages in chat. {{map}} - map name, {{vehicle}} - vehicle name.
+		"resultWin": "<font color='#4EA500'><font size='18'>Победа - {{map}} {{vehicle}}.</font></font>",
+		"resultDraw": "<font color='#FFA500'><font size='18'>Ничья - {{map}} {{vehicle}}.</font></font>",
+		"resultDefeat": "<font color='#FF2E00'><font size='18'>Поражение - {{map}} {{vehicle}}.</font></font>"
+	}
+}
