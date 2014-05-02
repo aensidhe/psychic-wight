@@ -13,6 +13,9 @@
     // true - Disable Platoon icons.
     // true - убрать отображение иконки взвода.
     "removeSquadIcon": false,
+    // true - Remove the Players Panel mode switcher (buttons for changing size).
+    // true - убрать переключатель режимов ушей мышкой.
+    "removePanelsModeSwitcher": false,
     // Display options for Team/Clan logos (see battleLoading.xc).
     // Параметры отображения иконки игрока/клана (см. battleLoading.xc).
     "clanIcon": {
@@ -64,8 +67,8 @@
     // Options for the "medium" panels - the first of the medium panels.
     // Режим ушей "medium" - первые средние уши в игре.
     "medium": {
-      // Width of the player's name column, 0-250. Default is 46.
-      // Ширина поля имени игрока, 0-250. По умолчанию: 46.
+      // Minimum width of the player's name column, 0-250. Default is 46.
+      // Минимальная ширина поля имени игрока, 0-250. По умолчанию: 46.
       "width": 46,
       // Display format for the left panel (macros allowed, see readme-en.txt).
       // Формат отображения для левой панели (допускаются макроподстановки, см. readme-ru.txt).

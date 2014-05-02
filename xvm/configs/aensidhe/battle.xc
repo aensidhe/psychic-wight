@@ -12,16 +12,16 @@
     "showPostmortemTips": true,
     // true - Remove the Players Panel mode switcher (buttons for changing size).
     // true - убрать переключатель режимов ушей мышкой.
-    "removePanelsModeSwitcher": true,
+    "removePanelsModeSwitcher": false,
     // false - disable highlighting of own vehicle icon and squad.
     // false - отключить подсветку иконки своего танка и взвода.
     "highlightVehicleIcon": true,
-    // Format of clock on the Debug Panel (near FPS). Format: Y:year, M:month, D:day, H:hour, N:minutes, S:seconds. "" - remove clock.
+    // true - enable {{hp*}} macros in players panels and minimap. WARNING: performance expensive
+    // true - включить {{hp*}} макросы в ушах и на миникарте. ВНИМАНИЕ: может понизить производительность
+    "allowHpInPanelsAndMinimap": false,
+	// Format of clock on the Debug Panel (near FPS). Format: Y:year, M:month, D:day, H:hour, N:minutes, S:seconds. "" - remove clock.
     // Формат часов на экране панели отладки (возле FPS). Формат: Y:год, M:месяц, D:день, H:часы, N:минуты, S:секунды. "" - убрать часы.
     "clockFormat": "H:N:S",
-    // true - use standard client vehicle markers.
-    // true - использовать стандартные маркеры клиента.
-    "useStandardMarkers": false,
     // Path to clan icons folder relative to res_mods/xvm/res.
     // Путь к папке иконок кланов относительно res_mods/xvm/res.
     "clanIconsFolder": "clanicons/",
@@ -33,7 +33,7 @@
   // Панель счёта в бою.
   "fragCorrelation": {
     // true - hide textfields "Allies | Enemies".
-    // true - cпрятать два текстовых поля "Союзники | Противники".
+    // true - спрятать два текстовых поля "Союзники | Противники".
     "hideTeamTextFields": false
   },
   // Ingame crits panel by "expert" skill.

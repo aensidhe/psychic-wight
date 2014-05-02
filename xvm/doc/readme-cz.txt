@@ -45,7 +45,7 @@
 
   2.  Nemusíte nic nastavovat.
     Pokud chcete nějaké jiné, než výchozí nastavení, musíte přejmenovat výchozí soubor s nastavením
-    "\res_mods\xvm\xvm.xc.sample" na "xvm.xc" v adresáři hry.
+    "\res_mods\xvm\configs\xvm.xc.sample" na "xvm.xc" v adresáři hry.
 
     Můžete použít online editor:
       http://www.koreanrandom.com/forum/topic/1422-/#entry11316
@@ -202,12 +202,9 @@
 
     Minimapa:
       {{level}}         - úroveň (tier) vozidla
-      {{short-nick}}    - zkrácené jméno hráče
       {{vehicle}}       - název vozidla
-      {{vehicle-type}}  - název vozidla
       {{vehicle-class}} - umístí zvláštní symbol podle typu vozidla
       {{cellsize}}      - délka strany buňky (např. A1) na minimapě
-      {{vehicle-name}}  - vrátí systémoví název vozidla - usa-M24_Chaffee
       {{vehiclename}}   - vrátí systémoví název vozidla - usa-M24_Chaffee
       {{vehicle-short}} - zkrácený název vozydla
 
@@ -309,7 +306,7 @@
       Ikony nejlepších 150 klanů jsou součástí balíčku.
 
       Archivy se všemi ikonami klanů je možné stáhnout zvlášť:
-        http://code.google.com/p/wot-xvm/downloads/list
+        http://www.modxvm.com/en/download-xvm/
         Soubory: clanicons-full-ru-XXX.zip (RU), clanicons-full-eu-XXX.zip (EU), clanicons-full-na-XXX.zip (NA),
         clanicons-full-sea-XXX.zip (SEA), clanicons-full-kr-XXX.zip (KR), clanicons-full-vn-XXX.zip (VN)
 

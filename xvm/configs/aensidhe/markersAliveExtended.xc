@@ -227,7 +227,7 @@
           "size": 4,
           "strength": 100
         },
-        "format": "{{hp-ratio}}\u0025" // \u0025 - percent symbol / символ процента
+        "format": "{{hp-ratio}}%"
       },
       // Text field with win ratio.
       // Текстовое поле с процентом побед.
@@ -253,7 +253,7 @@
           "size": 6,
           "strength": 200
         },
-        "format": "{{t-rating:3}}"
+        "format": "{{t-rating%3d~%}}"
       },
       {
         "name": "T-KB4",
@@ -277,7 +277,7 @@
           "size": 6,
           "strength": 200
         },
-        "format": "{{t-battles:4}}"
+        "format": "{{t-battles%4d}}"
       }
     ]
   },
@@ -428,7 +428,7 @@
           "size": 4,
           "strength": 100
         },
-        "format": "{{hp-ratio}}\u0025"
+        "format": "{{hp-ratio}}%"
       },
       // Text field with win ratio.
       // Текстовое поле с процентом побед.
@@ -454,7 +454,7 @@
           "size": 6,
           "strength": 200
         },
-        "format": "{{t-rating:3}}"
+        "format": "{{t-rating%3d~%}}"
       },
       {
         "name": "T-KB4",
@@ -478,7 +478,7 @@
           "size": 6,
           "strength": 200
         },
-        "format": "{{t-battles:4}}"
+        "format": "{{t-battles%4d}}"
       }
     ]
   }

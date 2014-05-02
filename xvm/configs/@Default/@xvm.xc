@@ -1,9 +1,7 @@
 ﻿/**
  * Main configuration file (hereinafter - the configuration).
  *
- * Attention! You must NOT use the percent symbol in configuration files.
- * Instead, the percent symbol should be written: \u0025
- * Use \n as newline character instead of <br> tag
+ * Attention! Use \n as newline character instead of <br> tag
  *
  * --------------------------------------------------------------------------
  * Esli vy vidite nizhe bessmyslennyj nabor simvolov - smenite kodirovku
@@ -11,9 +9,7 @@
  *
  * Главный конфигурационный файл (далее - конфиг).
  *
- * Внимание! Использование символа процента в файлах конфига не допустимо.
- * Вместо символа процента следует писать: \u0025
- * Для переноса на новую строку используйте \n вместо тэга <br>
+ * Внимание! Для переноса на новую строку используйте \n вместо тэга <br>
  *
  * Внимание! Кодировка файлов должна оставаться UTF8+BOM. В противном случае
  * вместо кириллицы в игре будут пустые глифы.
@@ -23,11 +19,11 @@
 {
   // Version of the config. Do not remove or change it unnecessarily.
   // Версия конфига. Не удаляйте и не изменяйте её без необходимости.
-  "configVersion": "5.0.0",
+  "configVersion": "5.1.0",
 
   // Version of the editor.
   // Версия редактора.
-  "editorVersion": "0.64",
+  "editorVersion": "0.80",
 
   // Language used in mod
   // "auto" - automatically detect language from game client,
@@ -58,15 +54,15 @@
 
     // Address to config updates.
     // Адрес, где выкладываются обновления конфига.
-    "url": "http://code.google.com/p/wot-xvm/",
+    "url": "http://www.modxvm.com/",
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "19.12.2013",
+    "date": "17.04.2014",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "0.8.10",
+    "gameVersion": "0.9.0",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.

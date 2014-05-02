@@ -1,4 +1,4 @@
-Contenu :
+﻿Contenu :
   1. Présentation
   2. Installation
   3. Mise à jour
@@ -48,7 +48,7 @@ Contenu :
 
     Si vous voulez personnaliser votre configuration, vous devez renommer le 
     fichier de démarrage de la config :
-      \res_mods\xvm\xvm.xc.sample en xvm.xc
+      \res_mods\xvm\configs\xvm.xc.sample en xvm.xc
     Les consignes pour modifier les paramêtres sont à l'intérieur.
 
     Toutes les options de configuration sont localisées dans
@@ -200,12 +200,9 @@ Contenu :
 
     Dans la minimap :
       {{level}}        - tier du tank
-      {{short-nick}}   - pseudo raccourci du joueur
       {{vehicle}}      - nom complet du tank
-      {{vehicle-type}}  - nom complet du type de tank
       {{vehicle-class}} - symbole spécial en fonction du type de tank
       {{cellsize}}     - taille d'une cellule de la minimap
-      {{vehicle-name}} - retourne le nom interne du tank - usa-M24_Chaffee
       {{vehiclename}}  - retourne le nom interne du tank - usa-M24_Chaffee
       {{vehicle-short}}  - nom du tank raccourci
 
@@ -303,7 +300,7 @@ Contenu :
     nick/<player>.png -> clan/<clan>.png -> clan/default.png -> nick/default.png
   Les 150 meilleurs clans sont inclus dans l'archive du mod par défaut.
   Une archive avec TOUS les clans peut être téléchargée séparément :
-    http://code.google.com/p/wot-xvm/downloads/list
+    http://www.modxvm.com/fr/telecharger-xvm/
     Fichiers : clanicons-full-ru-XXX.zip (RU), clanicons-full-eu-XXX.zip (EU), clanicons-full-na-XXX.zip (NA),
     clanicons-full-sea-XXX.zip (SEA), clanicons-full-kr-XXX.zip (KR), clanicons-full-vn-XXX.zip (VN)
 

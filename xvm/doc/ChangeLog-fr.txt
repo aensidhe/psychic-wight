@@ -1,8 +1,41 @@
-﻿XVM-5.1.0:
-  * adaptation pour WoT 0.8.11
-  * classement WN par défaut changé en WN8
-  * nouvelles options :
-      (battleLoading|battleResults|statisticForm)/showBattleTier - affiche le tier de la bataille
+﻿XVM-5.3.0-test1:
+  [CHANGEMENTS MAJEURS]
+  * nouvelle méthode de formattage des macros (cf. readme-fr.txt)
+  * version de la configuration augmentée en 5.1.0
+
+XVM-5.2.1-test2:
+  [CORRECTIONS]
+  * les panneaux des joueurs n'étaient pas affichés après le chargement de la bataille
+  * les éléments de la minimap s'affichent désormais correctement
+
+  [NOUVEAUTÉS]
+  * nouvelle option login/saveLastServer - sauvegarde le choix du dernier serveur de jeu (désactivé par défaut)
+
+
+XVM-5.2.1-test1:
+  * adaptation pour WoT 0.9.0
+
+  [NOUVEAUTÉS]
+  * traduction : changement de la manière d'envoyer les traductions. Plus de détails : https://code.google.com/p/wot-xvm/wiki/LocalizingXVM
+
+
+XVM-5.2.0-test1:
+  [CHANGEMENTS MAJEURS]
+  * fichier de configuration principal (xvm.xc) déplacé dans res_mods/xvm/configs
+  * les statistiques doivent désormais être activées dans les paramètres personnels sur http://www.modxvm.com/
+
+  [NOUVEAUTÉS]
+  * traduction : ajout du Chinois (simplifié)
+  * statistiques : utilisation d'une connexion cryptée
+  * ajout d'une nouveau format pour spécifier le chemin d'une image pour le tag <img> : 
+    xvm:// - chemin relatif au dossier res_mods/xvm
+      par exemple : <img src='xvm://configs/perso/icones/exemple.png'>
+
+  [AUTRES]
+  * statistiques : changement de l'adresse du serveur de stats (désormais https://stat.modxvm.com/)
+  * l'option battle/useStandardMarkers changée en markers/useStandardMarkers
+  * l'option battle/removePanelsModeSwitcher changée en playersPanel/removePanelsModeSwitcher
+  * version de la configuration augmentée en 5.0.2
 
 
 XVM-5.0.2:

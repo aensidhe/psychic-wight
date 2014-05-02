@@ -36,9 +36,9 @@
     "formatRightNick": "{{nick}}",
     // Display format for the left panel (macros allowed, see readme-en.txt).
     // Формат отображения для левой панели (допускаются макроподстановки, см. readme-ru.txt).
-    "formatLeftVehicle": "<font face='Consolas' size='12' color='{{c:kb}}'>{{kb:3}}</font> | <font face='Consolas' size='12' color='{{c:xwn8}}'>{{xwn8}}</font> | <font face='Consolas' size='12' color='{{c:rating}}'>{{rating:3}}</font>",
+    "formatLeftVehicle": "<font face='Consolas' size='12' color='{{c:kb}}'>{{kb%3d~k}}</font> | <font face='Consolas' size='12' color='{{c:xwn8}}'>{{xwn8}}</font> | <font face='Consolas' size='12' color='{{c:rating}}'>{{rating%3d~%}}</font>",
     // Display format for the right panel (macros allowed, see readme-en.txt).
-    // Формат отображения для правой панели (допускаются макроподстановки, см. readme-ru.txt).
-    "formatRightVehicle": "<font face='Consolas' size='12' color='{{c:rating}}'>{{rating:3}}</font> | <font face='Consolas' size='12' color='{{c:xwn8}}'>{{xwn8}}</font> | <font face='Consolas' size='12' color='{{c:kb}}'>{{kb:3}}</font>"
+    // Формат отображения для правой панели (допускаются 	, см. readme-ru.txt).
+    "formatRightVehicle": "<font face='Consolas' size='12' color='{{c:rating}}'>{{rating%3d~%}}</font> | <font face='Consolas' size='12' color='{{c:xwn8}}'>{{xwn8}}</font> | <font face='Consolas' size='12' color='{{c:kb}}'>{{kb%3d~k}}</font>"
   }
 }

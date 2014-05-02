@@ -1,4 +1,4 @@
-Content:
+﻿Content:
   1. Common information
   2. Install
   3. Update
@@ -44,7 +44,7 @@ Content:
   2. You do not need to setup anything by default.
 
     If you want special settings, you need to rename boot config file:
-      \res_mods\xvm\xvm.xc.sample to xvm.xc
+      \res_mods\xvm\configs\xvm.xc.sample to xvm.xc
     Instructions for setting it up are inside.
 
     All possible config options you can see in
@@ -190,12 +190,9 @@ Content:
 
     In Minimap:
       {{level}}         - subject level
-      {{short-nick}}    - subject shortened nickname
       {{vehicle}}       - subject full vehicle type
-      {{vehicle-type}}  - subject full vehicle type
       {{vehicle-class}} - places special symbol depending on subject vehicle class
       {{cellsize}}      - minimap cell side size
-      {{vehicle-name}}  - returns vehicle system name - usa-M24_Chaffee
       {{vehiclename}}   - returns vehicle system name - usa-M24_Chaffee
       {{vehicle-short}} - shortened vehicle name
 
@@ -252,6 +249,22 @@ Content:
       {{c:t-battles}} - color depending on current vehicle battles
       Any color macro you can change to transparency macro (e.g. {{a:tdb}}).
 
+    Extended macros formatting rules:
+      {{name[%[flag][width][.prec]type][~suf][|def]}}
+      name  - macro name
+      flag  - "-" for left align, else right align
+              "0" for filling with leading zeros
+      width - minimum width
+      prec  - maximum width for lines or number of digits after comma for numbers
+      type  - type (s - string, d - decimal, f - float, ...)
+      suf   - suffix added at the end
+      def   - default value, set when value is absent:
+    Details: http://en.wikipedia.org/wiki/Printf
+    For example:
+      {{name%-16.16s}}      - cut names longer 10 chars, and fill names shorter 10 chars and align left
+      {{kb%4.01f~k|----}}   - width 4 chars, exactly 1 char after comma, align right
+                              if kb==null, display "----"
+
     Localization macros usage - {{l10n:localizationKey}}
       Macros are just links to translations in file res_mods/xvm/l10n/XX.xc file (XX means language code).
       If the translation is not found, "localizationKey" is displayed.
@@ -295,7 +308,7 @@ Content:
     nick/<player>.png -> clan/<clan>.png -> clan/default.png -> nick/default.png
   TOP 150 clans are added to mod archive by default.
   Full archive with all clans can be downloaded separately:
-    http://code.google.com/p/wot-xvm/downloads/list
+    http://www.modxvm.com/en/download-xvm/
     Files: clanicons-full-ru-XXX.zip (RU), clanicons-full-eu-XXX.zip (EU), clanicons-full-na-XXX.zip (NA),
     clanicons-full-ASIA-XXX.zip (ASIA), clanicons-full-kr-XXX.zip (KR), clanicons-full-vn-XXX.zip (VN)
 
