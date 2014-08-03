@@ -4,4 +4,4 @@
 	Players panel state when counting up the fight.
 	Possible values ​​- short, medium, medium2, large.
 */
-"playersPanelState" : "large"
+"playersPanelState" : "medium2"
