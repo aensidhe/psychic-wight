@@ -1,7 +1,7 @@
 psychic-wight
 =============
 
-Modpack for World of Tanks 0.8.10
+Modpack for World of Tanks 0.9.2
 
 1. XVM.
 3. Dar's icons.
