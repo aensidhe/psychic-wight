@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--       Часы в ангаре        -->
+<!--   Автор мода Maxim___77    -->
+<!--  Автор конфига Maxim___77  -->
+
+<!-- Список макросов
+	{{hour}}	- часы
+	{{min}}		- минуты
+	{{sec}}		- секунды
+	
+	{{dat}}		- число месяца
+	{{mon}}		- месяц
+	{{year}}	- год
+	
+	{{day}}		- день недели -->
+
+<!-- Обновления, вопросы и предложения:
+Форум WG: http://forum.worldoftanks.ru/index.php?/topic/893214-0810-%d1%87%d0%b0%d1%81%d1%8b-%d0%b2-%d0%b0%d0%bd%d0%b3%d0%b0%d1%80%d0%b5-%d1%87%d0%b0%d1%81%d1%8b-%d0%b2-%d0%b1%d0%be%d1%8e-debugpanel
+Форум KR: http://www.koreanrandom.com/forum/topic/5115-0810-часы-в-ангаре-часы-в-бою-debugpanel -->
+ 
+<logos>
+
+	<!-- Формат часов -->
+	<ConfigClock visible="true">
+		<location x="439" y="140"/>
+		<field autoSize="left" border="false" borderColor="0xFFFFFF" height="50" width="200"/>
+		<text alpha="1" align="center" bold="false" color="0xCCCCCC" font="Micra" italic="false" size="22" underline="false"/>
+		<shadow alpha="0" angle="0" blurX="0" blurY="0" color="0x000000" distance="0" strength="0"/>
+		<glow alpha="0.5" blurX="7" blurY="7" color="0x000000" strength="3"/>
+		<format>{{hour}}:{{min}}:{{sec}}</format>
+	</ConfigClock>
+	
+	<!-- Формат даты -->
+	<ConfigDate visible="true">
+		<location x="310" y="140"/>
+		<field autoSize="left" border="false" borderColor="0xFFFFFF" height="50" width="200"/>
+		<text alpha="1" align="right" bold="false" color="0xCCCCCC" font="Micra" italic="false" size="12" underline="false"/>
+		<shadow alpha="0" angle="0" blurX="0" blurY="0" color="0x000000" distance="0" strength="0"/>
+		<glow alpha="0.5" blurX="5" blurY="5" color="0x000000" strength="3"/>
+		<format>{{dat}}-{{mon}}-{{year}}</format>
+	</ConfigDate>
+
+	<!-- Формат дня недели -->
+	<ConfigDay visible="true">
+		<location x="599" y="140"/>
+		<field autoSize="left" border="false" borderColor="0xFFFFFF" height="50" width="200"/>
+		<text alpha="1" align="left" bold="false" color="0xCCCCCC" font="Micra" italic="false" size="12" underline="false"/>
+		<shadow alpha="0" angle="0" blurX="0" blurY="0" color="0x000000" distance="0" strength="0"/>
+		<glow alpha="0.5" blurX="5" blurY="5" color="0x000000" strength="3"/>
+		<format>{{day}}</format>
+	</ConfigDay>
+	
+	<!-- День недели -->
+	<TextDay>
+		<mon>Monday</mon>
+		<tue>Tuesday</tue>
+		<wed>Wednesday</wed>
+		<thu>Thursday</thu>
+		<fri>Friday</fri>
+		<sat>Saturday</sat>
+		<sun>Sunday</sun>
+	</TextDay>
+	
+	<!-- Месяц -->
+	<TextMonth>
+		<jan>01</jan>
+		<feb>02</feb>
+		<mar>03</mar>
+		<apr>04</apr>
+		<may>05</may>
+		<jun>06</jun>
+		<jul>07</jul>
+		<aug>08</aug>
+		<sep>09</sep>
+		<oct>10</oct>
+		<nov>11</nov>
+		<dec>12</dec>
+	</TextMonth>
+
+</logos>

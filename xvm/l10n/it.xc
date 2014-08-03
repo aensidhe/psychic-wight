@@ -1,15 +1,14 @@
 {
   "locale": {
-    "XVM_translator": "nuciluc (EU)",
     "Initialization": "inizializzazione",
     "New version available": "nuova versione disponibile",
     "Chance error": "Non Calcolabile",
-    "Chance to win": "Chance di vittoria",
-    "chanceLive": "Per i vivi",
+    "Chance to win": "% vittoria iniziale",
+    "chanceLive": "% vittoria attuale",
     "chanceBattleTier": "Livello",
-    "attack": "Attaccare",
+    "attack": "attacco",
     "fire": "fuoco",
-    "ramming": "rammare",
+    "ramming": "speronato",
     "world_collision": "distrutto",
     "Hits": "Colpi",
     "Total": "Totale",
@@ -87,11 +86,12 @@
     "token/bad_token": "Token errato.\n{{l10n:token/notify_xvm_site}}",
     "token/blocked": "<font color='#FF0000'>Bloccato</font><br>{{l10n:token/notify_xvm_site}}",
     "token/inactive": "<font color='#FFFF00'>Inattivo</font><br>{{l10n:token/notify_xvm_site}}",
-    "token/active": "<font color='#00FF00'>Attivo</font>",
-    "token/days_left": "Giorni rimanenti:<tab/><font color='#eeeeee'>{0}</font>",
-    "token/hours_left": "Ore rimanenti:<tab/><font color='#ffff00'>{0}</font>",
-    "token/cnt": "N. richieste:<tab/><font color='#eeeeee'>{0}</font>",
     "token/unknown_status": "N / D",
-    "token/notify_xvm_site": "Entra nel <a href='#XVM_SITE#'>sito di XVM</a> e attiva le statistiche nel tuo profilo."
+    "token/notify_xvm_site": "Entra nel <a href='#XVM_SITE#'>sito di XVM</a> e attiva le statistiche nel tuo profilo.",
+    "": "nuciluc (EU)",
+    "": "<font color='#00FF00'>Attivo</font>",
+    "": "Giorni rimanenti:<tab/><font color='#eeeeee'>{0}</font>",
+    "": "Ore rimanenti:<tab/><font color='#ffff00'>{0}</font>",
+    "": "N. richieste:<tab/><font color='#eeeeee'>{0}</font>"
   }
 }

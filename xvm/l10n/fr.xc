@@ -1,6 +1,5 @@
 {
   "locale": {
-    "XVM_translator": "Edgar 'LaCourgette' Fournival",
     "Initialization": "Initialisation",
     "New version available": "Nouvelle version disponible",
     "Chance error": "Erreur lors du calcul des chances",
@@ -66,6 +65,15 @@
     "PutOwnCrew": "Mettre l'équipage adéquat",
     "PutBestCrew": "Mettre le meilleur équipage",
     "PutClassCrew": "Mettre un équipage de même classe",
+    "gun_reload_time/actual": "Temps de recharge du canon",
+    "view_range/base": "de base",
+    "view_range/actual": "actuelle",
+    "view_range/stereoscope": "avec binoculaires",
+    "radio_range/base": "de base",
+    "radio_range/actual": "actuelle",
+    "(sec)": "(sec)",
+    "(m)": "(m)",
+    "Squad battle tiers": "Tier de bataille du peloton",
     "Vehicle": "Char",
     "Battle tiers": "Tier de bataille",
     "Type": "Type",
@@ -88,10 +96,15 @@
     "token/blocked": "Statut : <font color='#FF0000'>Bloqué</font><br>{{l10n:token/notify_xvm_site}}",
     "token/inactive": "Statut : <font color='#FFFF00'>Inactif</font><br>{{l10n:token/notify_xvm_site}}",
     "token/active": "Statut : <font color='#00FF00'>Actif</font>",
-    "token/days_left": "Jours restant :<tab/><font color='#eeeeee'>{0}</font>",
-    "token/hours_left": "Heures restantes :<tab/><font color='#ffff00'>{0}</font>",
+    "token/time_left": "Temps restant :<tab/><font color='#EEEEEE'>{0} jours, {1} heures, {2} minutes</font>",
+    "token/time_left_warn": "Temps restant :<tab/><font color='#EEEE00'>{0} jours, {1} heures, {2} minutes</font>",
     "token/cnt": "Nb. de requêtes :<tab/><font color='#eeeeee'>{0}</font>",
     "token/unknown_status": "Statut inconnu",
-    "token/notify_xvm_site": "Merci d'aller sur le <a href='#XVM_SITE#'>site d'XVM</a> et d'activer les statistiques dans les paramètres personnels."
+    "token/notify_xvm_site": "Merci d'aller sur le <a href='#XVM_SITE#'>site d'XVM</a> et d'activer les statistiques dans les paramètres personnels.",
+    "": "Edgar 'LaCourgette' Fournival",
+    "": "Statut : <font color='#00FF00'>Actif</font>",
+    "": "Jours restant :<tab/><font color='#eeeeee'>{0}</font>",
+    "": "Heures restantes :<tab/><font color='#ffff00'>{0}</font>",
+    "": "Nb. de requêtes :<tab/><font color='#eeeeee'>{0}</font>"
   }
 }

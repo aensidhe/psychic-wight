@@ -1,6 +1,0 @@
-<root>
-    <message>Меня засветили!</message>
-    <enabledByDefault>True</enabledByDefault>
-    <SOS>True</SOS>
-    <showWhenLessThanSix>True</showWhenLessThanSix>
-</root>

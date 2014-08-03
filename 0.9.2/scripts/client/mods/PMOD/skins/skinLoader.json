@@ -1,0 +1,22 @@
+/*
+
+	Реализация скинов, для простоты подмены оформления - видимых частей мода.
+	
+	Здесь указывается путь к файлу скина с настройками.
+	Желательно скины складывать в папку: ../PMOD/skins/название
+
+	Вместе с модом распостроняются также популярные скины пользователей.
+
+	
+	
+	Implementation of skins, for ease of substitution of design - the visible parts of fashion.
+
+	This specifies the path to the skin settings.
+	It is desirable to put the skins in the folder: ../PMOD/skins/name 
+
+	Together with the mod may redistribute also popular skins users.
+
+*/
+
+{}
+ 

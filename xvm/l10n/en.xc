@@ -90,7 +90,18 @@
     "PutBestCrew": "Put best crew",
     "PutClassCrew": "Put same class crew",
 
+    // Vehicle Params
+    "gun_reload_time/actual": "Actual gun reload time",
+    "view_range/base": "base",
+    "view_range/actual": "actual",
+    "view_range/stereoscope": "with stereoscope",
+    "radio_range/base": "base",
+    "radio_range/actual": "actual",
+    "(sec)": "(sec)",
+    "(m)": "(m)",
+
     // Squad
+    "Squad battle tiers": "Squad battle tiers",
     "Vehicle": "Vehicle",
     "Battle tiers": "Battle tiers",
     "Type": "Type",
@@ -116,11 +127,15 @@
     "token/bad_token": "Bad token.\n{{l10n:token/notify_xvm_site}}",
     "token/blocked": "Status: <font color='#FF0000'>Blocked</font><br>{{l10n:token/notify_xvm_site}}",
     "token/inactive": "Status: <font color='#FFFF00'>Inactive</font><br>{{l10n:token/notify_xvm_site}}",
-    "token/active": "Status: <font color='#00FF00'>Active</font>",
-    "token/days_left": "Days left:<tab/><font color='#eeeeee'>{0}</font>",
-    "token/hours_left": "Hours left:<tab/><font color='#ffff00'>{0}</font>",
-    "token/cnt": "Requests count:<tab/><font color='#eeeeee'>{0}</font>",
+    "token/active": "Status:<tab/><font color='#00FF00'>Active</font>",
+    "token/time_left": "Time left:<tab/><font color='#EEEEEE'>{0}d. {1}h. {2}m.</font>",
+    "token/time_left_warn": "Time left:<tab/><font color='#EEEE00'>{0}d. {1}h. {2}m.</font>",
+    "token/cnt": "Requests count:<tab/><font color='#EEEEEE'>{0}</font>",
     "token/unknown_status": "Unknown status",
-    "token/notify_xvm_site": "Please go to the <a href='#XVM_SITE#'>XVM site</a> and activate statistics in the personal cabinet."
+    "token/notify_xvm_site": "Please go to the <a href='#XVM_SITE#'>XVM site</a> and activate statistics in the personal cabinet.",
+    
+    //Vehicle status
+    "Destroyed": "Destroyed",
+    "No data": "No data"
   }
 }
