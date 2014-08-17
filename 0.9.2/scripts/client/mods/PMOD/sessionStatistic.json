@@ -9,11 +9,11 @@
 	
 	// Автоматически обнулять статистику по истечению срока годности.
 	// Automatically reset the statistics after the expiration date.
-	"autoReset": false,
+	"autoReset": true,
 	
 	// Количество дней на протяжении которых хранится статистика.
 	// The number of days during which the stored statistics.
-	"daysToBeSaved": 365,
+	"daysToBeSaved": 1,
 
 	// Смещение времени относительно вашего часового пояса в стандарте UTC. 
 	// http://ru.wikipedia.org/wiki/Всемирное_координированное_время
